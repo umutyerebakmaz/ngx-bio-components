@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .item-group {
+        @apply flex flex-col items-center justify-start max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:flex-row sm:items-end sm:justify-around;
+    }
+}

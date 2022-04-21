@@ -11,4 +11,4 @@ import { BioButtonComponent } from './components/button/button.component';
     BioButtonComponent
   ],
 })
-export class BioButtonModule {}
+export class BioButtonModule { }

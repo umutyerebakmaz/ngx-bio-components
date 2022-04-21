@@ -1,0 +1,7 @@
+{
+  "angular.enable-strict-mode-prompt": false,
+  "prettier.tabWidth": 4,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+}
