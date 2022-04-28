@@ -1,32 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :host {
-    @apply inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150 cursor-pointer;
+    @apply inline-flex items-center border border-transparent rounded-md shadow-sm;
+    @apply transition ease-in-out duration-150 cursor-pointer;
+    /** color and size variations */
+    &.primary {
+        @apply text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+    }
+    &.xs {
+        @apply px-2.5 py-1.5 text-xs font-medium;
+    }
+    &.sm {
+        @apply px-3 py-2 text-sm font-medium leading-4;
+    }
+    &.md {
+        @apply px-4 py-2 text-sm font-medium;
+    }
+    &.lg {
+        @apply px-4 py-2 text-base font-medium;
+    }
+    &.xl {
+        @apply px-6 py-3 text-base font-medium;
+    }
+    &.cdk-keyboard-focused {
+        @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+    }
 }
-
-/** primary buttons */
-
-// btn xs primary
-.btn-xs-primary {
-    @apply inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150 cursor-pointer;
-}
-// btn sm primary
-.bt-sm-primary {
-    @apply inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150 cursor-pointer;
-}
-// btn md primary
-.btn-md-primary {
-    @apply inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
-}
-
-// btn lg primary
-.btn-lg-primary {
-    @apply inline-flex items-center px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
-}
-
-.btn-xl-primary {
-    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
-}
-
