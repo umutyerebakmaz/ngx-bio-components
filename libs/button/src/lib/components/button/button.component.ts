@@ -5,16 +5,6 @@ import { FocusMonitor } from '@angular/cdk/a11y';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: {
-    '[class.bio-btn-primary]': 'color === "primary"',
-    '[class.bio-btn-secondary]': 'color === "secondary"',
-    '[class.bio-btn-white]': 'color === "white"',
-    '[class.xs-btn]': 'size === "xs"',
-    '[class.sm-btn]': 'size === "sm"',
-    '[class.md-btn]': 'size === "md"',
-    '[class.lg-btn]': 'size === "lg"',
-    '[class.xl-btn]': 'size === "xl"',
-  }
 })
 export class BioButtonComponent implements OnInit, OnDestroy {
   @Input() color!: 'primary' | 'secondary' | 'white';
@@ -29,6 +19,14 @@ export class BioButtonComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.focusMonitor.monitor(this.elementRef);
+    if (this.color) {
+      this.elementRef.nativeElement.classList.add(`${this.color}`);
+      this.elementRef.nativeElement.classList.add(`${this.size}`);
+    }
+    if (!this.color && !this.size) {
+      this.elementRef.nativeElement.classList.add('primary');
+      this.elementRef.nativeElement.classList.add('md');
+    }
   }
 
   ngOnDestroy(): void {
