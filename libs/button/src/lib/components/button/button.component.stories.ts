@@ -31,5 +31,5 @@ secondary.args = {
 export const white = Template.bind({});
 white.args = {
   color: 'white',
-  size: 'md',
-}
+  size: 'xl',
+  }

@@ -2,31 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 :host {
-    @apply inline-flex items-center border border-transparent rounded-md shadow-sm;
+    @apply inline-flex items-center shadow-sm;
     @apply transition ease-in-out duration-150 cursor-pointer;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
     /** color and size variations */
     &.primary {
-        @apply text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        @apply border border-transparent text-white bg-indigo-600 hover:bg-indigo-700;
+        @apply inline-flex items-center shadow-sm;
+        @apply transition ease-in-out duration-150 cursor-pointer;
+        @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
     }
     &.secondary {
-        @apply text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        @apply border border-transparent text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none;
+    }
+    &.white {
+        @apply border border-gray-300 text-gray-700 bg-white hover:bg-gray-50;
     }
     &.xs {
-        @apply px-2.5 py-1.5 text-xs font-medium;
+        @apply px-2.5 py-1.5 text-xs font-medium rounded;
     }
     &.sm {
-        @apply px-3 py-2 text-sm font-medium leading-4;
+        @apply px-3 py-2 text-sm font-medium leading-4 rounded-md;
     }
     &.md {
-        @apply px-4 py-2 text-sm font-medium;
+        @apply px-4 py-2 text-sm font-medium rounded-md;
     }
     &.lg {
-        @apply px-4 py-2 text-base font-medium;
+        @apply px-4 py-2 text-base font-medium rounded-md;
     }
     &.xl {
-        @apply px-6 py-3 text-base font-medium;
+        @apply px-6 py-3 text-base font-medium rounded-md;
     }
-    &.cdk-keyboard-focused {
+    &.cdk-keyboard-focused,
+    .cdk-focused {
         @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
     }
 }
