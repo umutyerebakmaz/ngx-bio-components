@@ -25,11 +25,11 @@ primary.args = {
 export const secondary = Template.bind({});
 secondary.args = {
   color: 'secondary',
-  size: 'xl',
+  size: 'md',
 }
 
 export const white = Template.bind({});
 white.args = {
   color: 'white',
-  size: 'xl',
+  size: 'md',
   }
