@@ -24,7 +24,7 @@ export default async function (host: Tree, schema: Schema) {
   const moduleName = names(schema.name).className + 'Module';
 
   // Prefix the module name
-  transformFile(host, `libs/${schema.name}/src/lib/${schema.name}.module.ts`, [
+  transformFile(host, `libs/${names(schema.name).fileName}/src/lib/${names(schema.name).fileName}.module.ts`, [
     prefixIdentifierTransformer(moduleName),
   ]);
 
