@@ -41,7 +41,7 @@
     "autoprefixer": "10.4.7",
     "@types/node": "16.11.33",
     "cypress": "9.6.0",
-    "eslint": "8.14.0",
+    "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
     "jest": "28.1.0",
     "jest-preset-angular": "11.1.2",
