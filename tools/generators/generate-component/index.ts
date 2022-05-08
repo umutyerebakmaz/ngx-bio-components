@@ -1,7 +1,7 @@
 import { Tree, formatFiles, names } from '@nrwl/devkit';
 import { wrapAngularDevkitSchematic } from '@nrwl/tao/src/commands/ngcli-adapter';
-import { transformFile } from '../../../dist/out-tsc/tools/generators/utilities/transform';
-import { prefixIdentifierTransformer } from '../../../dist/out-tsc/tools/generators/utilities/prefix-identifier';
+import { transformFile } from '../utilities/transform';
+import { prefixIdentifierTransformer } from '../utilities/prefix-identifier';
 import { angularStoriesGenerator } from '@nrwl/angular/src/generators/stories/stories';
 interface Schema {
   name: string;
