@@ -9,7 +9,7 @@
       "node"
     ],
     "importHelpers": false,
-    "esModuleInterop": false
+    "esModuleInterop": true
   },
   "include": [
     "**/*.ts"
