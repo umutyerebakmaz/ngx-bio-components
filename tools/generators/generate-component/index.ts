@@ -28,13 +28,13 @@ export default async function (host: Tree, schema: any) {
 
   transformFile(
     host,
-    `libs/${project}/src/lib/${fileName}/${fileName}.component.ts`, [
+    `libs/${project}/src/lib/components/${fileName}/${fileName}.component.ts`, [
     prefixIdentifierTransformer(className),
   ]);
 
   transformFile(
     host,
-    `libs/${project}/src/lib/${fileName}/${fileName}.component.spec.ts`, [
+    `libs/${project}/src/lib/components/${fileName}/${fileName}.component.spec.ts`, [
     prefixIdentifierTransformer(className),
   ]);
 
@@ -47,10 +47,10 @@ export default async function (host: Tree, schema: any) {
   );
 
   // Generate story files for the component
-  angularStoriesGenerator(host, {
+/*   angularStoriesGenerator(host, {
     name: project,
     generateCypressSpecs: false,
-  });
+  }); */
   await formatFiles(host);
 }
 

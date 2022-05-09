@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input, ElementRef, OnInit, OnDestroy, HostBinding } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, ElementRef, OnInit, OnDestroy } from '@angular/core';
 import { FocusMonitor } from '@angular/cdk/a11y';
 @Component({
   selector: '[bio-button]',

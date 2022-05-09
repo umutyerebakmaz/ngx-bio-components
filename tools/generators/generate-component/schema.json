@@ -16,7 +16,7 @@
     "project": {
       "type": "string",
       "description": "Project name",
-      "x-prompt": "What project should be th component be added to?"
+      "x-prompt": "What project should be the component be added to?"
     }
   },
   "required": [
