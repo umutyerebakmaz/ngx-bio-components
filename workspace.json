@@ -1,6 +1,7 @@
 {
-  "version": 2,
-  "projects": {
-    "button": "libs/button"
-  }
+    "version": 2,
+    "projects": {
+        "button": "libs/button",
+        "text-input": "libs/text-input"
+    }
 }

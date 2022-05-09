@@ -1,37 +1,36 @@
 {
     "projectType": "library",
-    "sourceRoot": "libs/button/src",
+    "sourceRoot": "libs/text-input/src",
     "prefix": "bio",
     "targets": {
         "build": {
             "executor": "@nrwl/angular:package",
-            "outputs": ["dist/libs/button"],
+            "outputs": ["dist/libs/text-input"],
             "options": {
-                "project": "libs/button/ng-package.json",
-                "tailwindConfig": "libs/button/tailwind.config.js"
+                "project": "libs/text-input/ng-package.json"
             },
             "configurations": {
                 "production": {
-                    "tsConfig": "libs/button/tsconfig.lib.prod.json"
+                    "tsConfig": "libs/text-input/tsconfig.lib.prod.json"
                 },
                 "development": {
-                    "tsConfig": "libs/button/tsconfig.lib.json"
+                    "tsConfig": "libs/text-input/tsconfig.lib.json"
                 }
             },
             "defaultConfiguration": "production"
         },
         "test": {
             "executor": "@nrwl/jest:jest",
-            "outputs": ["coverage/libs/button"],
+            "outputs": ["coverage/libs/text-input"],
             "options": {
-                "jestConfig": "libs/button/jest.config.js",
+                "jestConfig": "libs/text-input/jest.config.ts",
                 "passWithNoTests": true
             }
         },
         "lint": {
             "executor": "@nrwl/linter:eslint",
             "options": {
-                "lintFilePatterns": ["libs/button/src/**/*.ts", "libs/button/src/**/*.html"]
+                "lintFilePatterns": ["libs/text-input/**/*.ts", "libs/text-input/**/*.html"]
             }
         },
         "storybook": {
@@ -40,10 +39,9 @@
                 "uiFramework": "@storybook/angular",
                 "port": 4400,
                 "config": {
-                    "configFolder": "libs/button/.storybook"
+                    "configFolder": "libs/text-input/.storybook"
                 },
-                "projectBuildConfig": "button:build-storybook",
-                "styles": ["libs/button/src/lib/components/button/button.component.scss"]
+                "projectBuildConfig": "text-input:build-storybook"
             },
             "configurations": {
                 "ci": {
@@ -56,11 +54,11 @@
             "outputs": ["{options.outputPath}"],
             "options": {
                 "uiFramework": "@storybook/angular",
-                "outputPath": "dist/storybook/button",
+                "outputPath": "dist/storybook/text-input",
                 "config": {
-                    "configFolder": "libs/button/.storybook"
+                    "configFolder": "libs/text-input/.storybook"
                 },
-                "projectBuildConfig": "button:build-storybook"
+                "projectBuildConfig": "text-input:build-storybook"
             },
             "configurations": {
                 "ci": {

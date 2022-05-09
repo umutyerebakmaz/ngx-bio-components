@@ -15,7 +15,8 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
-            "@ngx-bio-components/button": ["libs/button/src/index.ts"]
+            "@ngx-bio-components/button": ["libs/button/src/index.ts"],
+            "@ngx-bio-components/text-input": ["libs/text-input/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]
