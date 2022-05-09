@@ -13,10 +13,10 @@
         "index": 0
       }
     },
-    "project": {
+    "library": {
       "type": "string",
       "description": "Project name",
-      "x-prompt": "What project should be the component be added to?"
+      "x-prompt": "What project should the component be added to?"
     }
   },
   "required": [

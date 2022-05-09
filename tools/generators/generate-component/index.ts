@@ -4,6 +4,10 @@ import { transformFile } from '../utilities/transform';
 import { prefixIdentifierTransformer } from '../utilities/prefix-identifier';
 import { angularStoriesGenerator } from '@nrwl/angular/src/generators/stories/stories';
 
+interface Schema {
+  name: string;
+  library: string;
+}
 
 export default async function (host: Tree, schema: any) {
   await wrapAngularDevkitSchematic('@schematics/angular', 'component')(host, {
@@ -22,7 +26,7 @@ export default async function (host: Tree, schema: any) {
   // Rename to component class
   transformFile(
     host,
-    `libs/${project}/src/lib/${fileName}.module.ts`, [
+    `libs/${project}/src/lib/${project}.module.ts`, [
     prefixIdentifierTransformer(className),
   ]);
 
@@ -38,7 +42,6 @@ export default async function (host: Tree, schema: any) {
     prefixIdentifierTransformer(className),
   ]);
 
-
   // Add export to index.ts
   const indexFile = host.read(`libs/${project}/src/index.ts`)?.toString() ?? '';
   host.write(
@@ -46,17 +49,8 @@ export default async function (host: Tree, schema: any) {
     indexFile + '\n' + `export * from './lib/components/${fileName}/${fileName}.component';`,
   );
 
-  // Generate story files for the component
-/*   angularStoriesGenerator(host, {
-    name: project,
-    generateCypressSpecs: false,
-  }); */
   await formatFiles(host);
 }
 
-interface Schema {
-  name: string;
-  library: string;
-}
 
 
