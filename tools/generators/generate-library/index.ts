@@ -1,5 +1,6 @@
 import { libraryGenerator, storybookConfigurationGenerator } from '@nrwl/angular/generators';
 import { formatFiles, Tree, installPackagesTask, names } from '@nrwl/devkit';
+import { Linter } from '@nrwl/linter';
 import { prefixIdentifierTransformer } from '../utilities/prefix-identifier';
 import { transformFile } from '../utilities/transform';
 
@@ -33,6 +34,7 @@ export default async function (host: Tree, schema: Schema) {
     name: schema.name,
     configureCypress: false,
     generateCypressSpecs: false,
+    linter: Linter.EsLint,
   } as any);
 
   await formatFiles(host);

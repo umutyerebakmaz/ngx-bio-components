@@ -1,8 +1,8 @@
+import { angularStoriesGenerator } from '@nrwl/angular/generators';
 import { Tree, formatFiles, names } from '@nrwl/devkit';
 import { wrapAngularDevkitSchematic } from '@nrwl/tao/src/commands/ngcli-adapter';
 import { transformFile } from '../utilities/transform';
 import { prefixIdentifierTransformer } from '../utilities/prefix-identifier';
-import { angularStoriesGenerator } from '@nrwl/angular/src/generators/stories/stories';
 
 interface Schema {
   name: string;
@@ -49,6 +49,12 @@ export default async function (host: Tree, schema: any) {
     indexFile + '\n' + `export * from './lib/components/${fileName}/${fileName}.component';`,
   );
 
+  // Generate story files for the component
+
+  await angularStoriesGenerator(host, {
+    name: project,
+    generateCypressSpecs: false,
+  });
   await formatFiles(host);
 }
 

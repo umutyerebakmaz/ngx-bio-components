@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     displayName: 'text-input',
     preset: '../../jest.preset.ts',
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
