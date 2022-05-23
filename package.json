@@ -56,7 +56,7 @@
         "ts-jest": "28.0.2",
         "ts-node": "10.8.0",
         "typescript": "4.6.4",
-        "webpack": "5.72.0"
+        "webpack": "5.72.1"
     },
     "dependencies": {
         "@angular/animations": "13.3.6",
