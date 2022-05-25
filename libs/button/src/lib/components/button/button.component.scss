@@ -36,7 +36,8 @@
     &:focus {
         @apply outline-2;
     }
-    &.disabled {
+    &.bio-button-disabled {
         @apply cursor-not-allowed;
+        @apply border-transparent text-gray-400 bg-gray-300;
     }
 }

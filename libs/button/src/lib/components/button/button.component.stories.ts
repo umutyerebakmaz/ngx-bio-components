@@ -10,7 +10,17 @@ const Template: Story<BioButtonComponent> = (args: BioButtonComponent) => ({
   moduleMetadata: {
     imports: [BioButtonModule],
   },
-  template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button text</button>`,
+  template: `
+<button
+bio-button
+[text]="text"
+[color]="color"
+[size]="size"
+[disabled]="disabled"
+[type]="type"
+>
+{{ text }}
+</button>`,
   props: {
     ...args
   }
@@ -18,21 +28,25 @@ const Template: Story<BioButtonComponent> = (args: BioButtonComponent) => ({
 
 export const primary = Template.bind({});
 primary.args = {
+  text: 'Primary Button',
   color: 'primary',
   size: "md",
-  disabled: true
+  type: 'button'
 }
 
 export const secondary = Template.bind({});
 secondary.args = {
+  text: 'Secondary Button',
   color: 'secondary',
   size: 'md',
-  disabled: true
+  type: 'submit',
+  disabled: true,
 }
 
 export const white = Template.bind({});
 white.args = {
+  text: 'White Button',
   color: 'white',
   size: 'md',
-    disabled: true
-  }
+  type: 'reset'
+}
