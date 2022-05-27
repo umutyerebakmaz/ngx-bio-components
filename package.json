@@ -59,7 +59,7 @@
     "webpack": "5.72.1"
   },
   "dependencies": {
-    "@angular/cdk": "13.3.7",
+    "@angular/cdk": "13.3.8",
     "@angular/animations": "13.3.10",
     "@angular/common": "13.3.10",
     "@angular/compiler": "13.3.10",
