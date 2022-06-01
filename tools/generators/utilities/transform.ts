@@ -19,7 +19,6 @@ export function transformFile(
     ts.ScriptTarget.Latest,
     true,
   );
-
   const output = ts.transform(sourceFile, transformers);
   const printer = ts.createPrinter();
   host.write(path, printer.printFile(output.transformed[0]));
