@@ -35,15 +35,12 @@
             }
         },
         "storybook": {
-            "executor": "@nrwl/storybook:storybook",
+            "executor": "@storybook/angular:start-storybook",
             "options": {
-                "uiFramework": "@storybook/angular",
                 "port": 4400,
-                "config": {
-                    "configFolder": "libs/button/.storybook"
-                },
-                "projectBuildConfig": "button:build-storybook",
-                "styles": ["libs/button/src/lib/components/button/button.component.scss"]
+                "configDir": "libs/button/.storybook",
+                "browserTarget": "button:build-storybook",
+                "compodoc": false
             },
             "configurations": {
                 "ci": {
@@ -52,15 +49,13 @@
             }
         },
         "build-storybook": {
-            "executor": "@nrwl/storybook:build",
+            "executor": "@storybook/angular:build-storybook",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "uiFramework": "@storybook/angular",
-                "outputPath": "dist/storybook/button",
-                "config": {
-                    "configFolder": "libs/button/.storybook"
-                },
-                "projectBuildConfig": "button:build-storybook"
+                "outputDir": "dist/storybook/button",
+                "configDir": "libs/button/.storybook",
+                "browserTarget": "button:build-storybook",
+                "compodoc": false
             },
             "configurations": {
                 "ci": {

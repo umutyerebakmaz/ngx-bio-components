@@ -40,7 +40,7 @@ secondary.args = {
   color: 'secondary',
   size: 'md',
   type: 'submit',
-  disabled: true,
+  disabled: false,
 }
 
 export const white = Template.bind({});
