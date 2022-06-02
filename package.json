@@ -26,7 +26,6 @@
         "@nrwl/linter": "14.1.4",
         "@nrwl/nx-cloud": "latest",
         "@nrwl/storybook": "14.1.4",
-        "@nrwl/web": "^14.1.9",
         "@nrwl/workspace": "14.1.4",
         "@storybook/addon-essentials": "6.4.22",
         "@storybook/angular": "6.4.22",
