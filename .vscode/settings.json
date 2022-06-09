@@ -10,5 +10,6 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#585858"
     },
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "editor.autoIndent": "none"
 }
