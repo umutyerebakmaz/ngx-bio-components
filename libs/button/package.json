@@ -1,11 +1,28 @@
 {
-  "name": "@ngx-bio-components/button",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^13.3.0 || ^14.0.0",
-    "@angular/core": "^13.3.0 || ^14.0.0"
-  },
-  "dependencies": {
-    "tslib": "2.4.0"
-  }
+    "name": "@ngx-bio-components/button",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+    },
+    "keywords": [
+        "angular",
+        "component",
+        "button",
+        "tailwind",
+        "minimal"
+    ],
+    "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://umutyerebakmaz.com/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
+    },
+    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/button/README.md",
+    "peerDependencies": {
+        "@angular/common": "^13.3.0 || ^14.0.0",
+        "@angular/core": "^13.3.0 || ^14.0.0"
+    },
+    "dependencies": {
+        "tslib": "2.4.0"
+    }
 }

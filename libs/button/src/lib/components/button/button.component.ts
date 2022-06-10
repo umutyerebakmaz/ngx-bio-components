@@ -1,6 +1,9 @@
 import { Component, ChangeDetectionStrategy, Input, ElementRef, OnInit, OnDestroy } from '@angular/core';
 import { FocusMonitor } from '@angular/cdk/a11y';
 
+export type ButtonColor = 'primary' | 'secondary' | 'white';
+export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type ButtonType = 'button' | 'reset' | 'submit';
 @Component({
   selector: 'button[bio-button]',
   templateUrl: './button.component.html',
@@ -8,11 +11,10 @@ import { FocusMonitor } from '@angular/cdk/a11y';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BioButtonComponent implements OnInit, OnDestroy {
-  @Input() text = 'Button Text';
-  @Input() color!: 'primary' | 'secondary' | 'white';
-  @Input() size!: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  @Input() color!: ButtonColor;
+  @Input() size!: ButtonSize;
+  @Input() type!: ButtonType;
   @Input() disabled = false;
-  @Input() type!: 'button' | 'reset' | 'submit';
   constructor(
     private readonly elementRef: ElementRef<HTMLButtonElement>,
     private readonly focusMonitor: FocusMonitor
