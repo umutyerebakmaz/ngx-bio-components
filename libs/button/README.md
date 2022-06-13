@@ -6,34 +6,34 @@ Native `<button>` elements are always used in order to provide the most straight
 
 There are several button variants, each applied as an attribute:
 
-#### Color Types
+## Color Types
 
 Buttons can be colored in terms of the current theme using the `color` property to set the background color to `primary`, `secondary`, or `white`.
 
-#### Size Types
+## Size Types
 
 Buttons can be sized in terms of the current theme using the `size` property to set the button size to `xs`, `sm`, `md`, `lg` and `xl`.
 
-#### Accessibility
+## Accessibility
 
 `@ngx-bio-components/button` uses native `<button>` element to ensure an accessible experience by default. A `<button>` element should be used for any interaction that _performs an action on the current page_. All standard accessibility best practices for buttons apply to `BioButton`.
 
-# API
+## API
 
 ```typescript
 import { BioButtonModule } from '@ngx-bio-components/button';
 ```
 
-##### Directives
+## Directives
 
 `BioButton`
 
-Selector: button[bio-button]
+Selectors: `button[bio-button], button[bio-circular-button], button[bio-round-button]`
 
 Exported as: bioButton
 
 ```html
-<button bio-button [text]="text" [color]="color" [size]="size" [disabled]="disabled" [type]="type">Button</button>
+<button bio-button [color]="color" [size]="size" [disabled]="disabled" [type]="type">Button</button>
 ```
 
 <table>
@@ -42,16 +42,6 @@ Exported as: bioButton
       <th>Name</th>
       <th>Description</th>
     </tr>
-<tr>
-  <td>
-<div>
-@Input()
-</div>
-<p><code>text: string</code></p>
-  </td>
-  <td><p>The text of the button.</p>
-</td>
-</tr>
 <tr>
   <td>
 <div>

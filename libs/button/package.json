@@ -6,11 +6,9 @@
         "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
     },
     "keywords": [
-        "angular",
-        "component",
-        "button",
-        "tailwind",
-        "minimal"
+        "angular components",
+        "tailwind design",
+        "button"
     ],
     "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://umutyerebakmaz.com/)",
     "license": "MIT",

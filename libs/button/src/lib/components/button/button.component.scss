@@ -1,39 +1,85 @@
 @tailwind utilities;
 
 :host {
-    @apply inline-flex items-center shadow-sm border cursor-pointer;
-    @apply transition ease-in-out duration-300;
-    @apply focus:outline focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+    &button[bio-button] {
+        @apply inline-flex items-center shadow-sm border cursor-pointer;
+        @apply transition ease-in-out duration-300;
+        @apply focus:outline focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        &.xs {
+            @apply px-2.5 py-1.5 text-xs font-medium rounded;
+        }
+        &.sm {
+            @apply px-3 py-2 text-sm font-medium leading-4 rounded-md;
+        }
+        &.md {
+            @apply px-4 py-2 text-sm font-medium rounded-md;
+        }
+        &.lg {
+            @apply px-4 py-2 text-base font-medium rounded-md;
+        }
+        &.xl {
+            @apply px-6 py-3 text-base font-medium rounded-md;
+        }
+    }
+
+    &button[bio-round-button] {
+        @apply inline-flex items-center shadow-sm border-transparent rounded-full cursor-pointer;
+        @apply transition ease-in-out duration-300;
+        @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        &.xs {
+            @apply px-3 py-1.5 text-xs font-medium;
+        }
+        &.sm {
+            @apply px-3.5 py-2 text-sm leading-4 font-medium;
+        }
+        &.md {
+            @apply px-4 py-2 text-sm font-medium;
+        }
+        &.lg {
+            @apply px-5 py-2 text-base font-medium;
+        }
+        &.xl {
+            @apply px-6 py-3 text-base font-medium;
+        }
+    }
+
+    &button[bio-circular-button] {
+        @apply inline-flex items-center border border-transparent rounded-full shadow-sm cursor-pointer;
+        @apply transition ease-in-out duration-300;
+        @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        &.xs {
+            @apply p-1;
+        }
+        &.sm {
+            @apply p-1.5;
+        }
+        &.md {
+            @apply p-2;
+        }
+        &.lg {
+            @apply p-2;
+        }
+        &.xl {
+            @apply p-3;
+        }
+    }
+
     &.primary {
         @apply border-transparent text-white bg-indigo-600 hover:bg-indigo-700;
     }
+
     &.secondary {
         @apply border-transparent text-indigo-700 bg-indigo-100 hover:bg-indigo-200;
     }
+
     &.white {
         @apply border-gray-300 text-gray-700 bg-white hover:bg-gray-50;
     }
-    &.xs {
-        @apply px-2.5 py-1.5 text-xs font-medium rounded;
-    }
-    &.sm {
-        @apply px-3 py-2 text-sm font-medium leading-4 rounded-md;
-    }
-    &.md {
-        @apply px-4 py-2 text-sm font-medium rounded-md;
-    }
-    &.lg {
-        @apply px-4 py-2 text-base font-medium rounded-md;
-    }
-    &.xl {
-        @apply px-6 py-3 text-base font-medium rounded-md;
-    }
+
     &.cdk-focused {
         @apply outline-2 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
     }
-    &:focus {
-        @apply outline-2;
-    }
+
     &.bio-button-disabled {
         @apply cursor-not-allowed;
         @apply border-transparent text-gray-400 bg-gray-300;
