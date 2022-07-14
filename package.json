@@ -46,7 +46,7 @@
         "eslint-config-prettier": "8.5.0",
         "eslint-plugin-cypress": "2.12.1",
         "jest": "27.5.1",
-        "jest-preset-angular": "11.1.2",
+        "jest-preset-angular": "12.2.0",
         "ng-packagr": "13.3.1",
         "nx": "14.2.4",
         "postcss": "8.4.13",
