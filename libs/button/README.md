@@ -49,7 +49,7 @@ Exported as: bioButton
 </div>
 <p><code>color: 'primary' | 'secondary' | 'white'</code></p>
   </td>
-  <td><p>color alternatives. primary is default color</p>
+  <td><p>primary is default color.</p>
 </td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@ Exported as: bioButton
 </div>
 <p><code>type: 'button' | 'reset' | 'submit'</code></p>
   </td>
-  <td><p>color alternatives. button is default type.</p>
+  <td><p>submit is default type.</p>
 </td>
 </tr>
 <tr>
@@ -67,9 +67,9 @@ Exported as: bioButton
 <div>
 @Input()
 </div>
-<p><code>size: 'xs' | 'sm' | | 'md' | 'lg' 'xl'</code></p>
+<p><code>size: 'xs' | 'sm' | 'md' | 'lg' 'xl'</code></p>
   </td>
-  <td><p>size alternatives. sm is default size.</p>
+  <td><p>sm is default size.</p>
 </td>
 </tr>
 <tr>

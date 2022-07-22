@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input, ElementRef, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, ElementRef, OnInit, AfterViewInit, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
 import { FocusMonitor } from '@angular/cdk/a11y';
 
 export type ButtonColor = 'primary' | 'secondary' | 'white';
@@ -16,7 +16,7 @@ const BUTTON_HOST_ATTRIBUTES: string[] = [
     styleUrls: ['./button.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class BioButtonComponent implements OnInit, AfterViewInit, OnDestroy {
+export class BioButtonComponent implements OnInit, AfterViewInit, OnDestroy, OnChanges {
     @Input() color!: ButtonColor;
     @Input() size!: ButtonSize;
     @Input() type!: ButtonType;
@@ -31,6 +31,20 @@ export class BioButtonComponent implements OnInit, AfterViewInit, OnDestroy {
                 (this.getHostElement() as HTMLElement).classList.add(attr);
             }
         }
+    }
+
+    ngOnChanges(changes: SimpleChanges): void {
+        if (changes['disabled']) {
+            if (changes['disabled'].currentValue) {
+                this.elementRef.nativeElement.classList.add('bio-button-disabled');
+                this.elementRef.nativeElement.setAttribute('disabled', 'true');
+            }
+            if (!changes['disabled'].currentValue) {
+                this.elementRef.nativeElement.classList.remove('bio-button-disabled');
+                this.elementRef.nativeElement.removeAttribute('disabled');
+            }
+        }
+
     }
 
     ngOnInit(): void {
@@ -49,16 +63,13 @@ export class BioButtonComponent implements OnInit, AfterViewInit, OnDestroy {
         }
 
         if (this.disabled) {
-            this.elementRef.nativeElement.classList.remove(...['primary', 'secondary', 'white']);
             this.elementRef.nativeElement.classList.add('bio-button-disabled');
             this.elementRef.nativeElement.setAttribute('disabled', 'true');
         }
 
         if (this.type) {
-            console.log(this.type);
             this.elementRef.nativeElement.setAttribute('type', this.type);
         } else {
-            console.log(this.type);
             this.type = 'submit';
             this.elementRef.nativeElement.setAttribute('type', 'submit');
         }
