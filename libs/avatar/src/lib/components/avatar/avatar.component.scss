@@ -1,0 +1,47 @@
+@tailwind utilities;
+
+:host {
+    &img[bio-circular-avatar] {
+        @apply inline-block rounded-full relative;
+        @apply transition ease-in-out duration-300;
+        &.xs {
+            @apply h-6 w-6;
+        }
+        &.sm {
+            @apply h-8 w-8;
+        }
+        &.md {
+            @apply h-10 w-10;
+        }
+        &.lg {
+            @apply h-12 w-12;
+        }
+        &.xl {
+            @apply h-14 w-14;
+        }
+    }
+
+    &img[bio-round-avatar] {
+        @apply inline-block rounded-md relative;
+        &.xs {
+            @apply h-6 w-6;
+        }
+        &.sm {
+            @apply h-8 w-8;
+        }
+        &.md {
+            @apply h-10 w-10;
+        }
+        &.lg {
+            @apply h-12 w-12;
+        }
+        &.xl {
+            @apply h-14 w-14;
+        }
+    }
+
+    &.bio-avatar-disabled,
+    &.bio-avatar-disabled:hover {
+        @apply cursor-not-allowed opacity-50;
+    }
+}
