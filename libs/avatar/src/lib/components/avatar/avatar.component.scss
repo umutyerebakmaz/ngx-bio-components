@@ -10,7 +10,7 @@
     ::ng-deep .rounded {
         @apply rounded-md;
     }
-    ::ng-deep .image {
+    ::ng-deep .avatar-image {
         &.xxs {
             @apply w-6 h-6;
         }
