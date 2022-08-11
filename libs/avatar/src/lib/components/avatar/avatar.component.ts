@@ -1,70 +1,47 @@
-import { Component, OnInit, ChangeDetectionStrategy, ElementRef, Input, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ElementRef, Input, SimpleChanges, Renderer2, ViewChild } from '@angular/core';
 
 export type Avatar = {
-    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-    notificationPosition?: 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRigh';
-    notificationColor?: 'gray' | 'red' | 'green';
-    disabled?: boolean,
+    shape?: 'circular' | 'rounded';
+    size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+    badgePosition?: 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRigh';
+    badgeColor?: 'gray' | 'red' | 'green';
     img?: string,
     alt?: string,
     placeholder?: string;
+    disabled?: boolean,
 };
 
-const AVATAR_HOST_ATTRIBUTES: string[] = [
-    'bio-circular-avatar',
-    'bio-round-avatar',
-];
 @Component({
-    selector: 'img[bio-circular-avatar], img[bio-round-avatar]',
+    selector: 'bio-avatar',
     templateUrl: './avatar.component.html',
     styleUrls: ['./avatar.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BioAvatarComponent implements OnInit, OnChanges {
+export class BioAvatarComponent implements OnInit {
+
     @Input() avatar!: Avatar;
+    imgElement!: HTMLCollectionOf<HTMLImageElement>;
+    spanElement!: HTMLCollectionOf<HTMLSpanElement>;
+
     constructor(
         private readonly elementRef: ElementRef<HTMLElement>,
-    ) {
-        for (const attr of AVATAR_HOST_ATTRIBUTES) {
-            if (this.hasHostAttributes(attr)) {
-                (this.getHostElement() as HTMLElement).classList.add(attr);
-            }
-        }
-    }
+        private renderer: Renderer2,
+    ) {}
 
     ngOnInit(): void {
-        if (this.avatar.size) {
-            this.elementRef.nativeElement.classList.add(`${this.avatar.size}`);
-        } else {
-            this.avatar.size = 'md';
-            this.elementRef.nativeElement.classList.add(`md`);
-        }
-
-        if (this.avatar.disabled) {
-            this.elementRef.nativeElement.classList.add('bio-avatar-disabled');
-        }
+        this.imgElement = this.elementRef.nativeElement?.getElementsByTagName('img');
+        this.spanElement = this.elementRef.nativeElement?.getElementsByTagName('span');
+        console.log(this.imgElement);
+        console.log(this.spanElement);
+        this.renderer.setStyle(this.elementRef.nativeElement, 'backgroundColor', '#000');
+        this.renderer.setStyle(this.elementRef.nativeElement, 'display', 'inline-flex');
     }
 
+    // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method, @typescript-eslint/no-unused-vars, @angular-eslint/use-lifecycle-interface
     ngOnChanges(changes: SimpleChanges): void {
-        if (changes['avatar']) {
-            if (changes['avatar'].currentValue.disabled) {
-                this.elementRef.nativeElement.classList.add('bio-avatar-disabled');
-            }
-            if (!changes['avatar'].currentValue.disabled) {
-                this.elementRef.nativeElement.classList.remove('bio-avatar-disabled');
-            }
-            if (changes['avatar'].currentValue.size) {
-                this.elementRef.nativeElement.classList.remove('xs', 'sm', 'md', 'lg', 'xl');
-                this.elementRef.nativeElement.classList.add(`${this.avatar.size}`)
-            }
-        }
+        //
+
     }
 
-    hasHostAttributes(...attributes: string[]) {
-        return attributes.some(attribute => this.getHostElement().hasAttribute(attribute));
-    }
 
-    getHostElement() {
-        return this.elementRef.nativeElement;
-    }
 }

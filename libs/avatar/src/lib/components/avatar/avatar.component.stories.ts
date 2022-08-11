@@ -10,8 +10,11 @@ const Template: Story<BioAvatarComponent> = (args: BioAvatarComponent) => ({
     moduleMetadata: {
         imports: [BioAvatarModule],
     },
-
-    template: `<img bio-circular-avatar [avatar]="avatar" [src]="avatar.img" alt="{{ avatar.alt }}">`,
+    template: `<bio-avatar [avatar]="avatar">
+<img #imgElement *ngIf="avatar.img" class="circular xs" [src]="avatar.img" atr="23"/>
+<span #spanElement class="badge"></span>
+</bio-avatar>
+`,
     props: {
         ...args
     }
@@ -22,6 +25,6 @@ Primary.args = {
     avatar: {
         size: 'xl',
         disabled: true,
-        img: 'https://media.kommunity.com/avatar/f39ac89b-6924-471e-9ab8-8885f1b783bd_avatar_620cf10f8ea47.jpeg'
+        img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
     },
 };

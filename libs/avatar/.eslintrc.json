@@ -17,7 +17,7 @@
                 "@angular-eslint/component-selector": [
                     "error",
                     {
-                        "type": "attribute",
+                        "type": "element",
                         "prefix": "bio",
                         "style": "kebab-case"
                     }
