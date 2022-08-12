@@ -1,14 +1,14 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 export type Avatar = {
-    shape: 'circular' | 'rounded';
-    size: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-    badgePosition: 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRigh';
-    badgeColor: 'gray' | 'red' | 'green';
-    img: string,
-    alt: string,
-    placeholder: string;
-    disabled: boolean,
+    shape?: 'circular' | 'rounded';
+    size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+    badgePosition?: 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRigh';
+    badgeColor?: 'gray' | 'red' | 'green';
+    img?: string,
+    alt?: string,
+    placeholder?: string;
+    disabled?: boolean,
 };
 
 @Component({

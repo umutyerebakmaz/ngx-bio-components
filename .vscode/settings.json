@@ -4,9 +4,6 @@
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
     "compile-hero.disable-compile-files-on-did-save-code": false,
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontFamily": "monospace",
-    "terminal.integrated.fontWeightBold": "600",
     "editor.rulers": [
         140
     ],
