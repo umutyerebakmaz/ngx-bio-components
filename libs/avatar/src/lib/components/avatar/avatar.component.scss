@@ -2,7 +2,7 @@
 
 :host {
     &bio-avatar {
-        @apply inline-block relative m-32;
+        @apply inline-block relative pl-32;
     }
 
     ::ng-deep .circular {
@@ -13,8 +13,18 @@
         @apply rounded-md;
     }
 
+    ::ng-deep .top-right {
+        @apply top-0 right-0;
+    }
+    ::ng-deep .bottom-right {
+        @apply bottom-1.5 right-0;
+    }
+
+    ::ng-deep .icon {
+        @apply h-full w-full text-gray-300 overflow-hidden bg-gray-100;;
+    }
+
     ::ng-deep .avatar-notification {
-        @apply absolute top-0 right-0 block h-4 w-4 rounded-full ring-2 ring-white; // XL için
         &.xxs {
             @apply h-1.5 w-1.5;
         }
@@ -39,6 +49,14 @@
             @apply h-4 w-4;
         }
     }
+    ::ng-deep .avatar-notification.circular-notification {
+        @apply absolute block rounded-full ring-2 ring-white;
+    }
+
+    ::ng-deep .avatar-notification.rounded-notification {
+        @apply absolute block rounded-full ring-2 ring-white;
+        @apply transform -translate-y-1/2 translate-x-1/2;
+    }
 
     ::ng-deep .gray {
         @apply bg-gray-300;
@@ -52,7 +70,8 @@
         @apply bg-green-400;
     }
 
-    ::ng-deep .avatar-image {
+    ::ng-deep .avatar-image,
+    ::ng-deep .icon {
         &.xxs {
             @apply w-6 h-6;
         }
@@ -73,11 +92,3 @@
         }
     }
 }
-
-// circular top left xl
-/*   <span class="absolute top-0 right-0 block h-1.5 w-1.5 rounded-full ring-2 ring-white bg-gray-300"></span>
-  <span class="absolute top-0 right-0 block w-2 h-2 bg-red-400 rounded-full ring-2 ring-white"></span>
-  <span class="absolute top-0 right-0 block h-2.5 w-2.5 rounded-full ring-2 ring-white bg-green-400"></span>
-  <span class="absolute top-0 right-0 block w-3 h-3 bg-gray-300 rounded-full ring-2 ring-white"></span>
-  <span class="absolute top-0 right-0 block h-3.5 w-3.5 rounded-full ring-2 ring-white bg-red-400"></span>
-  <span class="absolute top-0 right-0 block w-4 h-4 bg-green-400 rounded-full ring-2 ring-white"></span> */
