@@ -2,7 +2,7 @@
 
 :host {
     &bio-avatar {
-        @apply inline-block relative pl-32;
+        @apply inline-block relative;
     }
 
     ::ng-deep .circular {
