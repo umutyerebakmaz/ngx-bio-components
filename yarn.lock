@@ -129,17 +129,6 @@
     ora "5.4.1"
     rxjs "6.6.7"
 
-"@angular-devkit/schematics@14.1.2", "@angular-devkit/schematics@~14.1.1":
-  version "14.1.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-14.1.2.tgz#6fb81aaece4ad1a24f3dd7b213e2f7000b41adbf"
-  integrity sha512-vC9UA3heXbq9CAkwMXHJfIu0G7Ty2oTJ5PtrrFQpig1PrFnRfr4sg+qRS1CLsEAJYQNo14xV55OQkKEPTij/Gg==
-  dependencies:
-    "@angular-devkit/core" "14.1.2"
-    jsonc-parser "3.1.0"
-    magic-string "0.26.2"
-    ora "5.4.1"
-    rxjs "6.6.7"
-
 "@angular-eslint/bundled-angular-compiler@14.0.2":
   version "14.0.2"
   resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-14.0.2.tgz#16aed25430b96fac50d069b2e44dae89fa4b12ad"
