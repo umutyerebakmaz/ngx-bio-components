@@ -35,3 +35,9 @@ export type Avatar = {
 </td>
 </tr>
 </tbody></table>
+
+
+<img width="1304" alt="Ekran Resmi 2022-08-15 17 04 15" src="https://user-images.githubusercontent.com/13598231/184650828-691dc1f2-d406-4370-80e9-d70fd6edf86a.png">
+
+<img width="1308" alt="Ekran Resmi 2022-08-15 17 04 28" src="https://user-images.githubusercontent.com/13598231/184650919-a8e43b43-aeae-4d22-8a5d-937421127650.png">
+
