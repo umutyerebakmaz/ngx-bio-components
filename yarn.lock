@@ -208,10 +208,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/cdk@14.1.1":
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-14.1.1.tgz#34e40a12e78b3a9db902d6c3fb3a407cc6875e43"
-  integrity sha512-Um4d5aWp7ACHd7O2cF3B4IXbQrnzMVvKlUVoKIBI4+EcCF70vAJrfXrAJoXIzLpte3MCDa6wO3wUX7uIJ4VlAQ==
+"@angular/cdk@14.1.0":
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-14.1.0.tgz#abf5ad3cdd96e42666bce949833ac1c2405ab031"
+  integrity sha512-EOQZmlTgj5Tc6/s50kEQUYKWH0S748rzbymBYkvyJs864lP9A8khz83IINmm+PD2sMADKtBETD3aEa5yQRhVAA==
   dependencies:
     tslib "^2.3.0"
   optionalDependencies:
@@ -17586,7 +17586,21 @@ ts-dedent@^2.0.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
 
-ts-jest@28.0.7, ts-jest@^28.0.0:
+ts-jest@28.0.8:
+  version "28.0.8"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-28.0.8.tgz#cd204b8e7a2f78da32cf6c95c9a6165c5b99cc73"
+  integrity sha512-5FaG0lXmRPzApix8oFG8RKjAz4ehtm8yMKOTy5HX3fY6W8kmvOrmcY0hKDElW52FJov+clhUbrKAqofnj4mXTg==
+  dependencies:
+    bs-logger "0.x"
+    fast-json-stable-stringify "2.x"
+    jest-util "^28.0.0"
+    json5 "^2.2.1"
+    lodash.memoize "4.x"
+    make-error "1.x"
+    semver "7.x"
+    yargs-parser "^21.0.1"
+
+ts-jest@^28.0.0:
   version "28.0.7"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-28.0.7.tgz#e18757a9e44693da9980a79127e5df5a98b37ac6"
   integrity sha512-wWXCSmTwBVmdvWrOpYhal79bDpioDy4rTT+0vyUnE3ZzM7LOAAGG9NXwzkEL/a516rQEgnMmS/WKP9jBPCVJyA==
