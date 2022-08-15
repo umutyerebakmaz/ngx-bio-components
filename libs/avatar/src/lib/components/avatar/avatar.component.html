@@ -5,7 +5,7 @@
     </div>
 
     <ng-template #image>
-        <img *ngIf="avatar.img; else icon" class="avatar-image" [ngClass]="addImageAndIconClass" [src]="avatar.img" />
+        <img *ngIf="avatar.img; else icon" class="avatar-image" [ngClass]="addImageAndIconClass" [src]="avatar.img" [alt]="avatar.alt"/>
     </ng-template>
 
     <ng-template #icon>

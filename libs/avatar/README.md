@@ -6,24 +6,19 @@
 import { BioButtonModule } from '@ngx-bio-components/avatar';
 ```
 
-
-
-Selectors: `bio-avatar`
-
-Exported as: bioAvatar
-
 ```html
 <bio-avatar [avatar]="avatar"></bio-avatar>
 ```
 
 ```typescript
-type Avatar = {
+export type Avatar = {
     shape?: 'circular' | 'rounded';
     size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
     badgePosition?: 'topRight' | 'bottomRigh';
     badgeColor?: 'gray' | 'red' | 'green';
     img?: string | undefined | null,
-    alt?: string
+    alt?: string,
+    placeholder?: string;
 };
 ```
 <table>
