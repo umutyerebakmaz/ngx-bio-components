@@ -23,8 +23,8 @@ Primary.args = {
         size: 'xl',
         badgeColor: 'green',
         badgePosition: 'topRight',
-        // img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        img: null,
+        path: 'http://localhost:4000/images/users/',
+        img: '28b4bf01-a067-46cb-9244-c55809608727.jpg',
         placeholder: 'IO',
     },
 };

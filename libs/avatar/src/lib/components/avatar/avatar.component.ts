@@ -8,7 +8,7 @@ export type Avatar = {
     img?: string | undefined | null,
     alt?: string,
     placeholder?: string;
-    disabled?: boolean,
+    path?: string;
 };
 
 @Component({
@@ -21,6 +21,11 @@ export class BioAvatarComponent implements OnInit {
     @Input() avatar!: Avatar;
 
     ngOnInit(): void {
+
+        if (this.avatar.path && this.avatar.img) {
+            this.avatar.img = this.avatar.path + this.avatar.img;
+        }
+
         if (!this.avatar.shape || this.avatar.shape === null) {
             this.avatar.shape = 'circular';
         }
