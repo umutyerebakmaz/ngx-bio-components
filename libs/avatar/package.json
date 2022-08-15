@@ -1,6 +1,6 @@
 {
-    "name": "@ngx-bio-components/button",
-    "version": "0.0.14",
+    "name": "@ngx-bio-components/avatar",
+    "version": "0.0.7",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
@@ -9,19 +9,19 @@
         "angular components",
         "tailwind design",
         "tailwindUI",
-        "button"
+        "avatar"
     ],
     "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
     },
-    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/button/README.md",
+    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/avatar/README.md",
     "peerDependencies": {
-        "@angular/common": "^13.3.0 || ^14.0.0",
-        "@angular/core": "^13.3.0 || ^14.0.0"
+        "@angular/common": "^13.3.0",
+        "@angular/core": "^13.3.0"
     },
     "dependencies": {
-        "tslib": "2.4.0"
+        "tslib": "^2.3.0"
     }
 }

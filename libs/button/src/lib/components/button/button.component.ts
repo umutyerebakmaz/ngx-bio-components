@@ -33,20 +33,6 @@ export class BioButtonComponent implements OnInit, AfterViewInit, OnDestroy, OnC
         }
     }
 
-    ngOnChanges(changes: SimpleChanges): void {
-        if (changes['disabled']) {
-            if (changes['disabled'].currentValue) {
-                this.elementRef.nativeElement.classList.add('bio-button-disabled');
-                this.elementRef.nativeElement.setAttribute('disabled', 'true');
-            }
-            if (!changes['disabled'].currentValue) {
-                this.elementRef.nativeElement.classList.remove('bio-button-disabled');
-                this.elementRef.nativeElement.removeAttribute('disabled');
-            }
-        }
-
-    }
-
     ngOnInit(): void {
         if (this.color) {
             this.elementRef.nativeElement.classList.add(`${this.color}`);
@@ -74,6 +60,20 @@ export class BioButtonComponent implements OnInit, AfterViewInit, OnDestroy, OnC
             this.elementRef.nativeElement.setAttribute('type', 'submit');
         }
     }
+
+    ngOnChanges(changes: SimpleChanges): void {
+        if (changes['disabled']) {
+            if (changes['disabled'].currentValue) {
+                this.elementRef.nativeElement.classList.add('bio-button-disabled');
+                this.elementRef.nativeElement.setAttribute('disabled', 'true');
+            }
+            if (!changes['disabled'].currentValue) {
+                this.elementRef.nativeElement.classList.remove('bio-button-disabled');
+                this.elementRef.nativeElement.removeAttribute('disabled');
+            }
+        }
+    }
+
 
     ngAfterViewInit() {
         this.focusMonitor.monitor(this.elementRef, true);

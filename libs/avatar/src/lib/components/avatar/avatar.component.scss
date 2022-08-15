@@ -1,0 +1,129 @@
+@tailwind utilities;
+
+:host {
+    &bio-avatar {
+        @apply inline-block relative;
+    }
+
+    ::ng-deep .placeholder-container {
+        @apply inline-flex items-center justify-center rounded-full bg-gray-500;
+        &.xs {
+            @apply h-6 w-6;
+        }
+        &.sm {
+            @apply h-8 w-8;
+        }
+        &.md {
+            @apply h-10 w-10;
+        }
+        &.lg {
+            @apply h-12 w-12;
+        }
+        &.xl {
+            @apply h-14 w-14;
+        }
+    }
+
+    ::ng-deep .placeholder-text {
+        @apply font-medium leading-none text-white;
+        &.xs {
+            @apply text-xs;
+        }
+        &.sm {
+            @apply text-sm;
+        }
+        &.lg {
+            @apply text-lg;
+        }
+        &.xl {
+            @apply text-xl;
+        }
+    }
+
+    ::ng-deep .circular {
+        @apply rounded-full;
+    }
+
+    ::ng-deep .rounded {
+        @apply rounded-md;
+    }
+
+    ::ng-deep .top-right {
+        @apply top-0 right-0;
+    }
+    ::ng-deep .bottom-right {
+        @apply bottom-1.5 right-0;
+    }
+
+    ::ng-deep .icon {
+        @apply h-full w-full text-gray-300 overflow-hidden bg-gray-100;
+    }
+
+    ::ng-deep .avatar-notification {
+        &.xxs {
+            @apply h-1.5 w-1.5;
+        }
+
+        &.xs {
+            @apply h-2 w-2;
+        }
+
+        &.sm {
+            @apply h-2.5 w-2.5;
+        }
+
+        &.md {
+            @apply h-3 w-3;
+        }
+
+        &.lg {
+            @apply h-3.5 w-3.5;
+        }
+
+        &.xl {
+            @apply h-4 w-4;
+        }
+    }
+    ::ng-deep .avatar-notification.circular-notification {
+        @apply absolute block rounded-full ring-2 ring-white;
+    }
+
+    ::ng-deep .avatar-notification.rounded-notification {
+        @apply absolute block rounded-full ring-2 ring-white;
+        @apply transform -translate-y-1/2 translate-x-1/2;
+    }
+
+    ::ng-deep .gray {
+        @apply bg-gray-300;
+    }
+
+    ::ng-deep .red {
+        @apply bg-red-400;
+    }
+
+    ::ng-deep .green {
+        @apply bg-green-400;
+    }
+
+    ::ng-deep .avatar-image,
+    ::ng-deep .icon {
+        &.xxs {
+            @apply w-6 h-6;
+        }
+        &.xs {
+            @apply w-8 h-8;
+        }
+        &.sm {
+            @apply w-10 h-10;
+        }
+        &.md {
+            @apply w-12 h-12;
+        }
+        &.lg {
+            @apply w-14 h-14;
+        }
+        &.xl {
+            @apply w-16 h-16;
+        }
+    }
+}

@@ -20,8 +20,8 @@ const Template: Story<BioButtonComponent> = (args: BioButtonComponent) => ({
     }
 });
 
-export const primary = Template.bind({});
-primary.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     color: 'primary',
     size: "md",
     type: 'button',
