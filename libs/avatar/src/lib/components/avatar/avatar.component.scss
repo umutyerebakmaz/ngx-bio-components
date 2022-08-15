@@ -5,6 +5,41 @@
         @apply inline-block relative;
     }
 
+    ::ng-deep .placeholder-container {
+        @apply inline-flex items-center justify-center rounded-full bg-gray-500;
+        &.xs {
+            @apply h-6 w-6;
+        }
+        &.sm {
+            @apply h-8 w-8;
+        }
+        &.md {
+            @apply h-10 w-10;
+        }
+        &.lg {
+            @apply h-12 w-12;
+        }
+        &.xl {
+            @apply h-14 w-14;
+        }
+    }
+
+    ::ng-deep .placeholder-text {
+        @apply font-medium leading-none text-white;
+        &.xs {
+            @apply text-xs;
+        }
+        &.sm {
+            @apply text-sm;
+        }
+        &.lg {
+            @apply text-lg;
+        }
+        &.xl {
+            @apply text-xl;
+        }
+    }
+
     ::ng-deep .circular {
         @apply rounded-full;
     }
