@@ -37,7 +37,6 @@ export class BioAvatarComponent implements OnInit {
         if (this.avatar.placeholder) {
             delete this.avatar.img;
         }
-        console.log(this.avatar);
     }
 
     get addPlaceHolderContainerClass() {
