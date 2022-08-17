@@ -1,6 +1,7 @@
 {
     "version": 2,
     "projects": {
+        "alert": "libs/alert",
         "avatar": "libs/avatar",
         "button": "libs/button",
         "text-input": "libs/text-input"
