@@ -1,10 +1,17 @@
-<div class="p-4 rounded-md" [ngClass]="addAlertTypeClass">
-  <div class="flex">
-    <div class="ml-3">
-      <h3 class="text-sm font-medium" [ngClass]="addHeaderTextColorClass">Attention needed</h3>
-      <div class="mt-2 text-sm" [ngClass]="addMessageTextColorClass">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</p>
-      </div>
+<div class="p-4 font-sans rounded-md" [ngClass]="addAlertTypeClass">
+    <div class="flex">
+        <div class="ml-3">
+            <h3 class="text-sm font-medium" [ngClass]="addHeaderTextColorClass">{{ alert.headerText }}</h3>
+            <div class="mt-2 text-sm" [ngClass]="addMessageTextColorClass">
+                <p *ngIf="!alert.messages?.length">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam
+                    quo totam eius aperiam dolorum.
+                </p>
+                <ul *ngIf="alert.messages?.length" role="list" class="pl-5 space-y-1 list-disc">
+                    <li>Your password must be at least 8 characters</li>
+                    <li>Your password must include at least one pro wrestling finishing move</li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

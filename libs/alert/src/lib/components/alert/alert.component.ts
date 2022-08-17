@@ -2,6 +2,8 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 
 export type Alert = {
     type?: 'error' | 'success' | 'warning' | 'info';
+    messages?: string | string[],
+    headerText?: string,
 };
 @Component({
     selector: 'bio-alert',

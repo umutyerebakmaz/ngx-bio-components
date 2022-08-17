@@ -14,14 +14,14 @@ export default {
 const Template: Story<BioAlertComponent> = (args: BioAlertComponent) => ({
     template: `<bio-alert [alert]="alert"></bio-alert>`,
     props: {
-    ...args
+        ...args
     }
 });
 
 export const Warning = Template.bind({});
 Warning.args = {
     alert: {
-    type: 'warning'
+        type: 'warning'
     }
 };
 
@@ -29,7 +29,12 @@ Warning.args = {
 export const Error = Template.bind({});
 Error.args = {
     alert: {
-        type: 'error'
+        type: 'error',
+        headerText: 'Validation Error',
+        messages: [
+            'Your password must be at least 8 characters',
+            'Your password must include at least one pro wrestling finishing move'
+        ]
     }
 };
 
