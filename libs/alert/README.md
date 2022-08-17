@@ -1,7 +1,33 @@
-# alert
+# @ngx-bio-components/avatar
 
-This library was generated with [Nx](https://nx.dev).
+```typescript
+import { BioAlertModule } from '@ngx-bio-components/alert';
+```
 
-## Running unit tests
+```html
+<bio-alert [alert]="alert"></bio-alert>
+```
 
-Run `nx test alert` to execute the unit tests.
+```typescript
+export type Alert = {
+    type?: 'error' | 'success' | 'warning' | 'info';
+    messages?: string[],
+    message?: string,
+    headerText?: string,
+};
+```
+
+<table>
+    <tbody>
+<tr>
+      <th>Name</th>
+      <th>Description</th>
+    </th>
+<tr>
+  <td>
+<code>@Input() alert: Alert</code>
+  </td>
+  <td>Alert input
+</td>
+</tr>
+</tbody></table>

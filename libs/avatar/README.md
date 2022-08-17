@@ -1,7 +1,5 @@
 # @ngx-bio-components/avatar
 
-## API
-
 ```typescript
 import { BioButtonModule } from '@ngx-bio-components/avatar';
 ```
