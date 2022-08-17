@@ -11,6 +11,8 @@ export default {
     ],
 } as Meta<BioAlertComponent>;
 
+
+const message = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.'
 const Template: Story<BioAlertComponent> = (args: BioAlertComponent) => ({
     template: `<bio-alert [alert]="alert"></bio-alert>`,
     props: {
@@ -21,8 +23,9 @@ const Template: Story<BioAlertComponent> = (args: BioAlertComponent) => ({
 export const Warning = Template.bind({});
 Warning.args = {
     alert: {
-        type: 'warning'
-    }
+        type: 'warning',
+        message
+    },
 };
 
 
@@ -31,6 +34,7 @@ Error.args = {
     alert: {
         type: 'error',
         headerText: 'Validation Error',
+        message,
         messages: [
             'Your password must be at least 8 characters',
             'Your password must include at least one pro wrestling finishing move'
@@ -41,13 +45,15 @@ Error.args = {
 export const Success = Template.bind({});
 Success.args = {
     alert: {
-        type: 'success'
+        type: 'success',
+        message
     }
 };
 
 export const Info = Template.bind({});
 Info.args = {
     alert: {
-        type: 'info'
+        type: 'info',
+        message
     }
 };

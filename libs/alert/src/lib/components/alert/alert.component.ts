@@ -2,7 +2,8 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 
 export type Alert = {
     type?: 'error' | 'success' | 'warning' | 'info';
-    messages?: string | string[],
+    messages?: string[],
+    message?: string,
     headerText?: string,
 };
 @Component({
@@ -15,8 +16,14 @@ export class BioAlertComponent implements OnInit {
 
     @Input() alert!: Alert;
 
+    show = true;
+
     ngOnInit(): void {
         console.log('add initial states!');
+    }
+
+    hide() {
+        this.show = !this.show;
     }
 
     get addAlertTypeClass() {
@@ -25,6 +32,7 @@ export class BioAlertComponent implements OnInit {
             'bg-green-50': this.alert.type === 'success',
             'bg-yellow-50': this.alert.type === 'warning',
             'bg-blue-50': this.alert.type === 'info',
+            'hidden': !this.show,
         }
     }
 
@@ -43,6 +51,15 @@ export class BioAlertComponent implements OnInit {
             'text-green-700': this.alert.type === 'success',
             'text-yellow-700': this.alert.type === 'warning',
             'text-blue-700': this.alert.type === 'info',
+        }
+    }
+
+    get addButtonClass() {
+        return {
+            'focus:ring-red-500 bg-red-600 hover:bg-red-700': this.alert.type === 'error',
+            'focus:ring-green-500 bg-green-600 hover:bg-green-700': this.alert.type === 'success',
+            'focus:ring-yellow-500 bg-yellow-600 hover:bg-yellow-700': this.alert.type === 'warning',
+            'focus:ring-blue-500 bg-blue-600 hover:bg-blue-700': this.alert.type === 'info',
         }
     }
 }
