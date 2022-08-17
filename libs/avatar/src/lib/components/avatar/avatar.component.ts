@@ -18,6 +18,7 @@ export type Avatar = {
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BioAvatarComponent implements OnInit {
+
     @Input() avatar!: Avatar;
 
     ngOnInit(): void {

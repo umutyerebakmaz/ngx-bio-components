@@ -12,8 +12,37 @@ export default {
 } as Meta<BioAlertComponent>;
 
 const Template: Story<BioAlertComponent> = (args: BioAlertComponent) => ({
-    props: args,
+    template: `<bio-alert [alert]="alert"></bio-alert>`,
+    props: {
+    ...args
+    }
 });
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Warning = Template.bind({});
+Warning.args = {
+    alert: {
+    type: 'warning'
+    }
+};
+
+
+export const Error = Template.bind({});
+Error.args = {
+    alert: {
+        type: 'error'
+    }
+};
+
+export const Success = Template.bind({});
+Success.args = {
+    alert: {
+        type: 'success'
+    }
+};
+
+export const Info = Template.bind({});
+Info.args = {
+    alert: {
+        type: 'info'
+    }
+};

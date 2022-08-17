@@ -7,7 +7,8 @@
             "executor": "@nrwl/angular:package",
             "outputs": ["dist/libs/alert"],
             "options": {
-                "project": "libs/alert/ng-package.json"
+                "project": "libs/alert/ng-package.json",
+                "tailwindConfig": "libs/alert/tailwind.config.js"
             },
             "configurations": {
                 "production": {
