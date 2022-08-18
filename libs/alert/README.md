@@ -35,7 +35,7 @@ export type Alert = {
 warning
 <img width="1769" alt="Ekran Resmi 2022-08-17 18 16 01" src="https://user-images.githubusercontent.com/13598231/185348836-930f5362-ad3b-4a11-9dbb-81772573141d.png">
 
-error
+error with header text and messages array
 
 <img width="1773" alt="Ekran Resmi 2022-08-17 18 15 32" src="https://user-images.githubusercontent.com/13598231/185348911-d6a5b216-6ef1-4d09-a59d-caf4fe471cb4.png">
 
