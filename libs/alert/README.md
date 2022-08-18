@@ -1,4 +1,4 @@
-# @ngx-bio-components/avatar
+# @ngx-bio-components/alert
 
 ```typescript
 import { BioAlertModule } from '@ngx-bio-components/alert';
@@ -11,9 +11,9 @@ import { BioAlertModule } from '@ngx-bio-components/alert';
 ```typescript
 export type Alert = {
     type?: 'error' | 'success' | 'warning' | 'info';
-    messages?: string[],
-    message?: string,
-    headerText?: string,
+    messages?: string[];
+    message?: string;
+    headerText?: string;
 };
 ```
 
