@@ -12,6 +12,8 @@
         "alert",
         "notification"
     ],
+    "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
     },
@@ -21,6 +23,6 @@
         "@angular/core": "14.1.0"
     },
     "dependencies": {
-        "tslib": "2.3.0"
+        "tslib": "2.4.0"
     }
 }

@@ -2,6 +2,17 @@
     "name": "ngx-bio-components",
     "version": "0.0.0",
     "license": "MIT",
+    "keywords": [
+        "angular",
+        "storybook",
+        "tailwind",
+        "ui-library"
+    ],
+    "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
+    "bugs": {
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
+    },
+    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/README.md",
     "scripts": {
         "start": "nx serve",
         "build": "nx build",
