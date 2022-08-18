@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 export type Alert = {
-    type?: 'error' | 'success' | 'warning' | 'info';
+    type: 'error' | 'success' | 'warning' | 'info';
     messages?: string[],
     message?: string,
     headerText?: string,
@@ -12,15 +12,11 @@ export type Alert = {
     styleUrls: ['./alert.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BioAlertComponent implements OnInit {
+export class BioAlertComponent {
 
     @Input() alert!: Alert;
 
     show = true;
-
-    ngOnInit(): void {
-        console.log('add initial states!');
-    }
 
     hide() {
         this.show = !this.show;
@@ -28,10 +24,10 @@ export class BioAlertComponent implements OnInit {
 
     get addAlertTypeClass() {
         return {
-            'bg-red-50': this.alert.type === 'error',
-            'bg-green-50': this.alert.type === 'success',
-            'bg-yellow-50': this.alert.type === 'warning',
-            'bg-blue-50': this.alert.type === 'info',
+            'bg-red-50 border-red-200': this.alert.type === 'error',
+            'bg-green-50 border-green-200': this.alert.type === 'success',
+            'bg-yellow-50 border-yellow-200': this.alert.type === 'warning',
+            'bg-blue-50 border-blue-200': this.alert.type === 'info',
             'hidden': !this.show,
         }
     }
