@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 export type Alert = {
     type: 'error' | 'success' | 'warning' | 'info';
@@ -15,11 +15,13 @@ export type Alert = {
 export class BioAlertComponent {
 
     @Input() alert!: Alert;
+    @Output() private buttonClicked = new EventEmitter();
 
     show = true;
 
-    hide() {
+    onButtonClicked() {
         this.show = !this.show;
+        this.buttonClicked.emit();
     }
 
     get addAlertTypeClass() {
