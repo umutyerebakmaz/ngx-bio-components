@@ -12623,7 +12623,7 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-ng-packagr@14.1.0:
+ng-packagr@~14.1.0:
   version "14.1.0"
   resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-14.1.0.tgz#f0d3b291dd3d361b90acd6cebe8af41c35597414"
   integrity sha512-08B+bOp53YhmPobI1tK0YwGUAysden/PHtBUtmLaJxIHYVZqzH/RIFVaZLx+k+70TFqs+P2Hjpmo3wblWqFzxg==

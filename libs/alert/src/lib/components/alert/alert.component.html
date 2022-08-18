@@ -1,0 +1,33 @@
+<div class="p-4 font-sans rounded-md border" [ngClass]="addAlertTypeClass">
+    <div class="flex justify-between ml-3">
+        <div>
+            <h3 class="text-sm font-medium" [ngClass]="addHeaderTextColorClass">{{ alert.headerText }}</h3>
+            <div class="mt-2 text-sm" [ngClass]="addMessageTextColorClass">
+                <p *ngIf="alert.message">
+                    {{ alert.message }}
+                </p>
+                <ul *ngIf="alert.messages?.length" role="list" class="pl-5 space-y-1 list-disc">
+                    <li *ngFor="let message of alert.messages">{{ message }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex items-center">
+            <button (click)="hide()"
+                type="button"
+                class="alert-button"
+            [ngClass]="addButtonClass">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
