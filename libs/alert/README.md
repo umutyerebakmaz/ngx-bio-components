@@ -14,6 +14,7 @@ export type Alert = {
     messages?: string[];
     message?: string;
     headerText?: string;
+    show?: boolean;
 };
 ```
 
@@ -46,6 +47,3 @@ success
 info
 
 <img width="1772" alt="Ekran Resmi 2022-08-17 18 15 41" src="https://user-images.githubusercontent.com/13598231/185349029-b0dc9fc9-ddbf-4348-be65-b0a9a21d7360.png">
-
-
-
