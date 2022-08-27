@@ -1,4 +1,4 @@
-# @ngx-bio-components/avatar
+# @ngx-bio-components/alert
 
 ```typescript
 import { BioAlertModule } from '@ngx-bio-components/alert';
@@ -11,9 +11,10 @@ import { BioAlertModule } from '@ngx-bio-components/alert';
 ```typescript
 export type Alert = {
     type?: 'error' | 'success' | 'warning' | 'info';
-    messages?: string[],
-    message?: string,
-    headerText?: string,
+    messages?: string[];
+    message?: string;
+    headerText?: string;
+    show?: boolean;
 };
 ```
 
@@ -22,12 +23,20 @@ export type Alert = {
 <tr>
       <th>Name</th>
       <th>Description</th>
-    </th>
 <tr>
   <td>
 <code>@Input() alert: Alert</code>
   </td>
-  <td>Alert input
+  <td>
+Alert input
+</td>
+</tr>
+<tr>
+  <td>
+<code>@Output() buttonClicked: EventEmitter</code>
+  </td>
+  <td>
+Alert input
 </td>
 </tr>
 </tbody></table>
@@ -46,6 +55,3 @@ success
 info
 
 <img width="1772" alt="Ekran Resmi 2022-08-17 18 15 41" src="https://user-images.githubusercontent.com/13598231/185349029-b0dc9fc9-ddbf-4348-be65-b0a9a21d7360.png">
-
-
-
