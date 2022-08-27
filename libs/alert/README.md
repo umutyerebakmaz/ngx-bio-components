@@ -23,12 +23,20 @@ export type Alert = {
 <tr>
       <th>Name</th>
       <th>Description</th>
-    </th>
 <tr>
   <td>
 <code>@Input() alert: Alert</code>
   </td>
-  <td>Alert input
+  <td>
+Alert input
+</td>
+</tr>
+<tr>
+  <td>
+<code>@Output() buttonClicked: EventEmitter</code>
+  </td>
+  <td>
+Alert input
 </td>
 </tr>
 </tbody></table>
