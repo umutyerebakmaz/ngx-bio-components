@@ -1,4 +1,9 @@
 [![wakatime](https://wakatime.com/badge/github/umutyerebakmaz/ngx-bio-components.svg)](https://wakatime.com/badge/github/umutyerebakmaz/ngx-bio-components)
+
+
+[![wakatime](https://wakatime.com/badge/user/1f3cc823-dd0b-4961-9c29-8693ec43c39c/project/c0a5b532-d82e-4bfd-b868-a8ddd385a2c6.svg)](https://wakatime.com/badge/user/1f3cc823-dd0b-4961-9c29-8693ec43c39c/project/c0a5b532-d82e-4bfd-b868-a8ddd385a2c6)
+
+
 # @ngx-bio-components
 
 Welcome,
