@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/github/umutyerebakmaz/ngx-bio-components.svg)](https://wakatime.com/badge/github/umutyerebakmaz/ngx-bio-components)
 # @ngx-bio-components
 
 Welcome,
