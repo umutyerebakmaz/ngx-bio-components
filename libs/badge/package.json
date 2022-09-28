@@ -1,6 +1,20 @@
 {
     "name": "@ngx-bio-components/badge",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+    },
+    "keywords": [
+        "angular components",
+        "tailwind design",
+        "tailwindUI",
+        "badge"
+    ],
+    "bugs": {
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
+    },
+    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/alert/README.md",
     "peerDependencies": {
         "@angular/common": "^14.1.0",
         "@angular/core": "^14.1.0"

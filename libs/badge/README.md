@@ -5,7 +5,7 @@ import { BioBadgeModule } from '@ngx-bio-components/badge';
 ```
 
 ```html
-<bio-alert [alert]="alert"></bio-alert>
+<bio-badge [alert]="alert"></bio-badge>
 ```
 
 ```typescript
@@ -49,6 +49,13 @@ type Badge = {
 <code>badge.color</code>
   </td>
   <td>gray, red, yellow, green, blue, indigo, purple, pink, indigo is default
+</td>
+</tr>
+<tr>
+  <td>
+<code>badge.text</code>
+  </td>
+  <td>Text is default
 </td>
 </tr>
 </tbody></table>
