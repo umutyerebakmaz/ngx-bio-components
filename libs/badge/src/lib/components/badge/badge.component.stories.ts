@@ -21,6 +21,9 @@ const Template: Story<BioBadgeComponent> = (args: BioBadgeComponent) => ({
 export const Primary = Template.bind({});
 Primary.args = {
     badge: {
-
+        text: 'Green Badge',
+        size: 'large',
+        shape: 'rounded',
+        color: 'green',
     }
 };

@@ -12,7 +12,7 @@ Thank you to the [Angular Material](https://github.com/angular/components) and [
 **_Some of the components on the list are still in development and may not work properly._**
 
 - [Avatar](https://www.npmjs.com/package/@ngx-bio-components/avatar)
-- Badge
+- [Badge](https://www.npmjs.com/package/@ngx-bio-components/badge)
 - Bottom Sheet
 - [Button](https://www.npmjs.com/package/@ngx-bio-components/button)
 - Button Toggle

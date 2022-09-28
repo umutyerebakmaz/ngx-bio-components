@@ -1,11 +1,9 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
-type Badge = {
+export type Badge = {
     size?: 'basic' | 'large' | undefined;
     shape?: 'basic' | 'rounded';
     color?: 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink';
-    dot?: boolean;
-    removeButton?: false;
     text?: string;
 }
 
