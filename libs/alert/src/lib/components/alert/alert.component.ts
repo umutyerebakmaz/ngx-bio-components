@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 
 export type Alert = {
-    type: 'error' | 'success' | 'warning' | 'info';
-    messages?: string[],
-    message?: string,
-    headerText?: string,
+    type?: 'error' | 'success' | 'warning' | 'info';
+    headerText?: string;
+    message?: string;
+    messages?: string[];
+    show?: boolean;
 };
 @Component({
     selector: 'bio-alert',
@@ -12,14 +13,18 @@ export type Alert = {
     styleUrls: ['./alert.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BioAlertComponent {
+export class BioAlertComponent implements OnInit {
 
     @Input() alert!: Alert;
+    @Output() private buttonClicked = new EventEmitter();
 
-    show = true;
+    ngOnInit(): void {
+        this.alert.show = true;
+    }
 
-    hide() {
-        this.show = !this.show;
+    onButtonClicked() {
+        this.alert.show = !this.alert.show;
+        this.buttonClicked.emit();
     }
 
     get addAlertTypeClass() {
@@ -28,7 +33,7 @@ export class BioAlertComponent {
             'bg-green-50 border-green-200': this.alert.type === 'success',
             'bg-yellow-50 border-yellow-200': this.alert.type === 'warning',
             'bg-blue-50 border-blue-200': this.alert.type === 'info',
-            'hidden': !this.show,
+            'hidden': !this.alert.show,
         }
     }
 

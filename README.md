@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/github/umutyerebakmaz/ngx-bio-components.svg)](https://wakatime.com/badge/github/umutyerebakmaz/ngx-bio-components)
+
 # @ngx-bio-components
 
 Welcome,
@@ -5,12 +7,11 @@ You can access and contribute NGX Bio Component UI libraries developed for Angul
 
 It has been developed by taking inspiration from the core features of Angular Material and TailwindUI interface components.
 
-Thank you to the [Angular Material](https://github.com/angular/components) and [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) team for their contributions.
-
 ## Components List
 
 **_Some of the components on the list are still in development and may not work properly._**
 
+- [Alert](https://www.npmjs.com/package/@ngx-bio-components/alert)
 - [Avatar](https://www.npmjs.com/package/@ngx-bio-components/avatar)
 - [Badge](https://www.npmjs.com/package/@ngx-bio-components/badge)
 - Bottom Sheet
