@@ -13,7 +13,7 @@ It has been developed by taking inspiration from the core features of Angular Ma
 
 - [Alert](https://www.npmjs.com/package/@ngx-bio-components/alert)
 - [Avatar](https://www.npmjs.com/package/@ngx-bio-components/avatar)
-- Badge
+- [Badge](https://www.npmjs.com/package/@ngx-bio-components/badge)
 - Bottom Sheet
 - [Button](https://www.npmjs.com/package/@ngx-bio-components/button)
 - Button Toggle

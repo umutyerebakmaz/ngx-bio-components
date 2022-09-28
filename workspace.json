@@ -3,6 +3,7 @@
     "projects": {
         "alert": "libs/alert",
         "avatar": "libs/avatar",
+        "badge": "libs/badge",
         "button": "libs/button",
         "text-input": "libs/text-input"
     }
