@@ -2,6 +2,22 @@
     "name": "ngx-bio-components",
     "version": "0.0.0",
     "license": "MIT",
+    "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+    },
+    "keywords": [
+        "angular",
+        "ui",
+        "component",
+        "library",
+        "tailwind"
+    ],
+    "bugs": {
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
+    },
+    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/README.md",
     "scripts": {
         "start": "nx serve",
         "build": "nx build",
