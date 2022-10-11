@@ -40,4 +40,5 @@ export class BioBadgeComponent implements OnInit {
             'bg-pink-100 text-pink-800': this.badge.color === 'pink',
         }
     }
+
 }
