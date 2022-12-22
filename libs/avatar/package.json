@@ -18,8 +18,8 @@
     },
     "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/avatar/README.md",
     "peerDependencies": {
-        "@angular/common": "14.2.0",
-        "@angular/core": "14.2.0"
+        "@angular/common": "14.2.12",
+        "@angular/core": "14.2.12"
     },
     "dependencies": {
         "tslib": "2.4.0"
