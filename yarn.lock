@@ -14094,7 +14094,7 @@ postcss-preset-env@7.8.0:
     postcss-selector-not "^6.0.1"
     postcss-value-parser "^4.2.0"
 
-postcss-preset-env@^7.4.2:
+postcss-preset-env@7.8.3, postcss-preset-env@^7.4.2:
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-7.8.3.tgz#2a50f5e612c3149cc7af75634e202a5b2ad4f1e2"
   integrity sha512-T1LgRm5uEVFSEF83vHZJV2z19lHg4yJuZ6gXZZkqVsqv63nlr6zabMH3l4Pc01FQCyfWVrh2GaUeCVy9Po+Aag==
