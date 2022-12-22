@@ -4,7 +4,7 @@
     &button[bio-button] {
         @apply inline-flex items-center shadow-sm border cursor-pointer;
         @apply transition ease-in-out duration-300;
-        @apply focus:outline focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
         &.xs {
             @apply px-2.5 py-1.5 text-xs font-medium rounded;
         }
