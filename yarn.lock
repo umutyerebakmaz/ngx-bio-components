@@ -12501,10 +12501,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-ng-packagr@14.2.1:
-  version "14.2.1"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-14.2.1.tgz#9b00cf2674cf4ac240dfed87a708c55043f90008"
-  integrity sha512-o2t/a+DdhUEbXXPbR70LZcU4WcSf7wnddCiQcc3k0HrTQjxWspv0qFUdba3+0ft0dVetaywa6lc+98g/SZEKcQ==
+ng-packagr@14.2.2:
+  version "14.2.2"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-14.2.2.tgz#4afcbac06f34e55ec36555683b13bfaa7d7b042d"
+  integrity sha512-AqwHcMM6x+JkCHT++IsbulnTdyoXcC2Cr4tbPamuieacc77+fFbB195hdcqEFwsKX5410cymx/ZUyHird9rxlg==
   dependencies:
     "@rollup/plugin-json" "^4.1.0"
     "@rollup/plugin-node-resolve" "^13.1.3"
