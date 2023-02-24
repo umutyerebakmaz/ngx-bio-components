@@ -1,47 +1,53 @@
 {
-    "name": "button",
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "name": "tooltip",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
     "projectType": "library",
-    "sourceRoot": "libs/button/src",
+    "sourceRoot": "libs/tooltip/src",
     "prefix": "bio",
     "targets": {
         "build": {
             "executor": "@nrwl/angular:package",
-            "outputs": ["dist/libs/button"],
+            "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
             "options": {
-                "project": "libs/button/ng-package.json",
-                "tailwindConfig": "libs/button/tailwind.config.js"
+                "project": "libs/tooltip/ng-package.json"
             },
             "configurations": {
                 "production": {
-                    "tsConfig": "libs/button/tsconfig.lib.prod.json"
+                    "tsConfig": "libs/tooltip/tsconfig.lib.prod.json"
                 },
                 "development": {
-                    "tsConfig": "libs/button/tsconfig.lib.json"
+                    "tsConfig": "libs/tooltip/tsconfig.lib.json"
                 }
             },
             "defaultConfiguration": "production"
         },
         "test": {
             "executor": "@nrwl/jest:jest",
-            "outputs": ["coverage/libs/button"],
+            "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
             "options": {
-                "jestConfig": "libs/button/jest.config.js",
+                "jestConfig": "libs/tooltip/jest.config.ts",
                 "passWithNoTests": true
+            },
+            "configurations": {
+                "ci": {
+                    "ci": true,
+                    "codeCoverage": true
+                }
             }
         },
         "lint": {
             "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
             "options": {
-                "lintFilePatterns": ["libs/button/src/**/*.ts", "libs/button/src/**/*.html"]
+                "lintFilePatterns": ["libs/tooltip/**/*.ts", "libs/tooltip/**/*.html"]
             }
         },
         "storybook": {
             "executor": "@storybook/angular:start-storybook",
             "options": {
                 "port": 4400,
-                "configDir": "libs/button/.storybook",
-                "browserTarget": "button:build-storybook",
+                "configDir": "libs/tooltip/.storybook",
+                "browserTarget": "tooltip:build-storybook",
                 "compodoc": false
             },
             "configurations": {
@@ -52,11 +58,11 @@
         },
         "build-storybook": {
             "executor": "@storybook/angular:build-storybook",
-            "outputs": ["{options.outputPath}"],
+            "outputs": ["{options.outputDir}"],
             "options": {
-                "outputDir": "dist/storybook/button",
-                "configDir": "libs/button/.storybook",
-                "browserTarget": "button:build-storybook",
+                "outputDir": "dist/storybook/tooltip",
+                "configDir": "libs/tooltip/.storybook",
+                "browserTarget": "tooltip:build-storybook",
                 "compodoc": false
             },
             "configurations": {
