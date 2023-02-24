@@ -10,7 +10,7 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#585858"
     },
-    "editor.detectIndentation": false,
+
     "editor.autoIndent": "none",
     "typescript.tsdk": "node_modules/typescript/lib",
     "scss.validate": false

@@ -1,5 +1,7 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { BioTooltipComponent } from './tooltip.component';
+import { BioTooltipDirective } from './tooltip.directive';
+
 
 export default {
     title: 'BioTooltipComponent',
@@ -7,12 +9,14 @@ export default {
     decorators: [
         moduleMetadata({
             imports: [],
+            declarations: [BioTooltipDirective]
         }),
     ],
 } as Meta<BioTooltipComponent>;
 
 const Template: Story<BioTooltipComponent> = (args: BioTooltipComponent) => ({
     props: args,
+    template: `<button bioTooltip>Tooltip Development</button>`
 });
 
 export const Primary = Template.bind({});
