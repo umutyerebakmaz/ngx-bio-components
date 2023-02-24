@@ -28,6 +28,7 @@ export class BioTooltipDirective {
             }
         ]);
 
+        this.overlayRef = this.overlay.create({ positionStrategy });
         this.tooltipRef = this.overlayRef.attach(new ComponentPortal(BioTooltipOverlayComponent));
     }
 
