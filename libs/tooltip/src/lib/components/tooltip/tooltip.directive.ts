@@ -1,6 +1,6 @@
 import { ComponentRef, Directive, ElementRef, HostListener, Input } from '@angular/core';
 import { OverlayRef, Overlay, OverlayPositionBuilder } from '@angular/cdk/overlay';
-import { BioTooltipOverlayComponent } from './tooltip-overlay/tooltip-overlay.component';
+import { BioTooltipComponent } from './tooltip.component';
 import { ComponentPortal } from '@angular/cdk/portal';
 @Directive({
     selector: '[bioTooltip]'
@@ -9,7 +9,7 @@ export class BioTooltipDirective {
 
     @Input('bioTooltip') text = '';
     private overlayRef!: OverlayRef;
-    private tooltipRef!: ComponentRef<BioTooltipOverlayComponent>;
+    private tooltipRef!: ComponentRef<BioTooltipComponent>;
 
     constructor(
         private overlay: Overlay,
@@ -29,7 +29,7 @@ export class BioTooltipDirective {
         ]);
 
         this.overlayRef = this.overlay.create({ positionStrategy });
-        this.tooltipRef = this.overlayRef.attach(new ComponentPortal(BioTooltipOverlayComponent));
+        this.tooltipRef = this.overlayRef.attach(new ComponentPortal(BioTooltipComponent));
     }
 
     @HostListener('mouseenter')

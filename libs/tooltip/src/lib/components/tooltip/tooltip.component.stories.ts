@@ -16,7 +16,11 @@ export default {
 
 const Template: Story<BioTooltipComponent> = (args: BioTooltipComponent) => ({
     props: args,
-    template: `<button bioTooltip="demo">Tooltip Development</button>`
+    template: `
+<div class="container">
+<button bioTooltip="demo">Tooltip Development</button>
+</div>
+`
 });
 
 export const Primary = Template.bind({});

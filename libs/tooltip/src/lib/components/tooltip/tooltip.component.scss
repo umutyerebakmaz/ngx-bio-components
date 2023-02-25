@@ -1,1 +1,10 @@
 @import '@angular/cdk/overlay-prebuilt.css';
+
+@tailwind utilities;
+
+.tooltip-overlay {
+    @apply inline-flex py-1 px-2 text-sm font-medium text-white bg-slate-600 rounded shadow-sm;
+}
+
+.tooltip {
+}

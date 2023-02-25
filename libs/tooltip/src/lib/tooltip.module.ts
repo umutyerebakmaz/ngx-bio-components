@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BioTooltipDirective } from './components/tooltip/tooltip.directive';
-import { BioTooltipOverlayComponent } from './components/tooltip/tooltip-overlay/tooltip-overlay.component';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { BioTooltipComponent } from './components/tooltip/tooltip.component';
 @NgModule({
     imports: [CommonModule, OverlayModule],
-    declarations: [BioTooltipOverlayComponent, BioTooltipDirective],
+    declarations: [BioTooltipComponent, BioTooltipDirective],
     exports: [BioTooltipDirective],
 })
 export class BioTooltipModule {}
