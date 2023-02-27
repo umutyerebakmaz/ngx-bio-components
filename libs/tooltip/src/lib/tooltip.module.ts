@@ -6,7 +6,7 @@ import { BioTooltipComponent } from './components/tooltip/tooltip.component';
 @NgModule({
     imports: [CommonModule, OverlayModule],
     declarations: [BioTooltipComponent, BioTooltipDirective],
-    exports: [BioTooltipDirective],
+    exports: [BioTooltipComponent],
 })
 export class BioTooltipModule {}
 0

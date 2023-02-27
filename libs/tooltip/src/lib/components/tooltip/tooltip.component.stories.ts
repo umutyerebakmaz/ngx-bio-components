@@ -18,7 +18,7 @@ const Template: Story<BioTooltipComponent> = (args: BioTooltipComponent) => ({
     props: args,
     template: `
 <div class="container">
-<button bioTooltip="demo">Tooltip Development</button>
+<button bioTooltip="Example Tooltip Message">Tooltip Development</button>
 </div>
 `
 });
