@@ -19,7 +19,8 @@
             "@ngx-bio-components/avatar": ["libs/avatar/src/index.ts"],
             "@ngx-bio-components/badge": ["libs/badge/src/index.ts"],
             "@ngx-bio-components/button": ["libs/button/src/index.ts"],
-            "@ngx-bio-components/text-input": ["libs/text-input/src/index.ts"]
+            "@ngx-bio-components/text-input": ["libs/text-input/src/index.ts"],
+            "@ngx-bio-components/tooltip": ["libs/tooltip/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

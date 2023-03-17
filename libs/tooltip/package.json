@@ -1,0 +1,28 @@
+{
+    "name": "@ngx-bio-components/tooltip",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+    },
+    "keywords": [
+        "angular components",
+        "tailwind design",
+        "tailwindUI",
+        "tooltip"
+    ],
+    "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components/issues"
+    },
+    "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/tooltip/README.md",
+    "peerDependencies": {
+        "@angular/common": "15.2.0",
+        "@angular/core": "15.2.0"
+    },
+    "dependencies": {
+        "tslib": "2.3.0"
+    },
+    "sideEffects": false
+}

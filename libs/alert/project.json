@@ -1,4 +1,6 @@
 {
+    "name": "alert",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "projectType": "library",
     "sourceRoot": "libs/alert/src",
     "prefix": "bio",

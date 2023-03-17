@@ -1,4 +1,6 @@
 {
+    "name": "avatar",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "projectType": "library",
     "sourceRoot": "libs/avatar/src",
     "prefix": "bio",
