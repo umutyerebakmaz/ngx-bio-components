@@ -18,7 +18,6 @@ Buttons can be sized in terms of the current theme using the `size` property to 
 
 `@ngx-bio-components/button` uses native `<button>` element to ensure an accessible experience by default. A `<button>` element should be used for any interaction that _performs an action on the current page_. All standard accessibility best practices for buttons apply to `BioButton`.
 
-
 ```typescript
 import { BioButtonModule } from '@ngx-bio-components/button';
 ```
@@ -82,3 +81,5 @@ Exported as: bioButton
 </td>
 </tr>
   </tbody></table>
+
+test
