@@ -81,5 +81,3 @@ Exported as: bioButton
 </td>
 </tr>
   </tbody></table>
-
-demo
