@@ -54,7 +54,7 @@
         "@tailwindcss/line-clamp": "0.4.2",
         "@tailwindcss/typography": "0.5.9",
         "@types/jest": "29.5.0",
-        "@types/node": "18.15.3",
+        "@types/node": "18.15.13",
         "@typescript-eslint/eslint-plugin": "5.55.0",
         "@typescript-eslint/parser": "5.55.0",
         "autoprefixer": "10.4.14",
