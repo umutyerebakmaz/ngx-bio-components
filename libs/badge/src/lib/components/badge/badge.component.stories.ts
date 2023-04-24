@@ -12,7 +12,7 @@ export default {
 } as Meta<BioBadgeComponent>;
 
 const Template: Story<BioBadgeComponent> = (args: BioBadgeComponent) => ({
-    template: `<bio-badge [badge]="badge">Template</bio-badge>`,
+    template: `<bio-badge [size]="size" [shape]="shape" [color]="color" [border]="border">Template</bio-badge>`,
     props: {
         ...args
     }
@@ -20,10 +20,8 @@ const Template: Story<BioBadgeComponent> = (args: BioBadgeComponent) => ({
 
 export const withBorder = Template.bind({});
 withBorder.args = {
-    badge: {
-        size: 'normal',
-        shape: 'flat',
-        color: 'gray',
-        border: true,
-    }
+    size: 'normal',
+    shape: 'flat',
+    color: 'gray',
+    border: true,
 };
