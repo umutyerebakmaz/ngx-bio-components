@@ -5,16 +5,21 @@ import { BioBadgeModule } from '@ngx-bio-components/badge';
 ```
 
 ```html
-<bio-badge [alert]="alert"></bio-badge>
+<bio-badge [badge]="badge">
+    <svg class="h-1.5 w-1.5 fill-indigo-500" viewBox="0 0 6 6" aria-hidden="true">
+        <circle cx="3" cy="3" r="3" />
+    </svg>
+    Badge
+</bio-badge>
 ```
 
 ```typescript
 type Badge = {
-    size?: 'basic' | 'large';
-    shape?: 'basic' | 'rounded';
+    size?: 'normal' | 'small';
+    shape?: 'flat' | 'pill';
     color?: 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink';
-    text?: string;
-}
+    border?: true;
+};
 ```
 
 <table>
@@ -34,14 +39,14 @@ type Badge = {
   <td>
 <code>badge.size</code>
   </td>
-  <td>basic, large, basic is default
+  <td>normal, small, normal is default
 </td>
 </tr>
 <tr>
   <td>
 <code>badge.shape</code>
   </td>
-  <td>basic, rounded, basic is default
+  <td>flat, pill, flat is default
 </td>
 </tr>
 <tr>
@@ -53,9 +58,9 @@ type Badge = {
 </tr>
 <tr>
   <td>
-<code>badge.text</code>
+<code>badge.border</code>
   </td>
-  <td>Text is default
+  <td>boolean, true is default
 </td>
 </tr>
 </tbody></table>

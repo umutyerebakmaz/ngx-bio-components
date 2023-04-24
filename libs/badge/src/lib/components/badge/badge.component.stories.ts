@@ -12,18 +12,18 @@ export default {
 } as Meta<BioBadgeComponent>;
 
 const Template: Story<BioBadgeComponent> = (args: BioBadgeComponent) => ({
-    template: `<bio-badge [badge]="badge">Badge</bio-badge>`,
+    template: `<bio-badge [badge]="badge">Template</bio-badge>`,
     props: {
         ...args
     }
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const withBorder = Template.bind({});
+withBorder.args = {
     badge: {
-        text: 'Green Badge',
-        size: 'large',
-        shape: 'rounded',
-        color: 'green',
+        size: 'normal',
+        shape: 'flat',
+        color: 'gray',
+        border: true,
     }
 };

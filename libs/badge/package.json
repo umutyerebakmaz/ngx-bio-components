@@ -1,11 +1,11 @@
 {
     "name": "@ngx-bio-components/badge",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "license": "MIT",
     "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components"
     },
     "keywords": [
         "angular components",
