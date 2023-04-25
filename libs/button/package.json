@@ -1,9 +1,9 @@
 {
     "name": "@ngx-bio-components/button",
-    "version": "0.0.15",
+    "version": "0.0.18",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components"
     },
     "keywords": [
         "angular components",

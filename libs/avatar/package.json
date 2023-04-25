@@ -5,7 +5,7 @@
     "author": "Umut Yerebakmaz <umutyerebakmaz@gmail.com> (https://github.com/umutyerebakmaz)",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components"
     },
     "keywords": [
         "angular components",

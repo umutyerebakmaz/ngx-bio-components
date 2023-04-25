@@ -3,7 +3,7 @@
     "version": "0.0.6",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/umutyerebakmaz/ngx-bio-components"
+        "url": "https://github.com/umutyerebakmaz/ngx-bio-components"
     },
     "keywords": [
         "angular components",
