@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { BioNotificationComponent } from './notification.component';
 
 export default {
-    title: 'BioNotificationComponent',
+    title: 'Notification',
     component: BioNotificationComponent,
 } as Meta<BioNotificationComponent>;
 

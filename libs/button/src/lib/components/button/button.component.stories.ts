@@ -1,43 +1,45 @@
-import { BioButtonModule } from '../../button.module';
+import { Meta } from '@storybook/angular';
 import { BioButtonComponent } from './button.component';
-import { Story } from '@storybook/angular';
-
 
 export default {
     title: 'Button',
-}
+    component: BioButtonComponent
+} as Meta<BioButtonComponent>;
 
-const Template: Story<BioButtonComponent> = (args: BioButtonComponent) => ({
-    moduleMetadata: {
-        imports: [BioButtonModule],
+export const primary = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'primary',
+        size: "md",
+        type: 'button',
+        disabled: false,
     },
-    template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">
-Button Text
-</button>`,
-    props: {
-        ...args
-    }
-});
+};
 
-export const Primary = Template.bind({});
-Primary.args = {
-    color: 'primary',
-    size: "md",
-    type: 'button',
-    disabled: false,
-}
+export const secondary = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'secondary',
+        size: 'md',
+        type: 'submit',
+        disabled: false,
+    },
+};
 
-export const secondary = Template.bind({});
-secondary.args = {
-    color: 'secondary',
-    size: 'md',
-    type: 'submit',
-    disabled: false,
-}
-
-export const white = Template.bind({});
-white.args = {
-    color: 'white',
-    size: 'md',
-    type: 'reset'
-}
+export const white = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'white',
+        size: 'md',
+        type: 'reset'
+    },
+};
