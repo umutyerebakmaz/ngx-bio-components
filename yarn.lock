@@ -7481,7 +7481,7 @@ eslint-plugin-cypress@2.13.2:
   dependencies:
     globals "^11.12.0"
 
-eslint-plugin-storybook@^0.6.11:
+eslint-plugin-storybook@0.6.11:
   version "0.6.11"
   resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.6.11.tgz#3c52fc3e994d1539d8a69c4028999402601eaacb"
   integrity sha512-lIVmCqQgA0bhcuS1yWYBFrnPHBKPEQI+LHPDtlN81UE1/17onCqgwUW7Nyt7gS2OHjCAiOR4npjTGEoe0hssKw==
@@ -8625,7 +8625,7 @@ html-minifier-terser@^6.0.2:
     relateurl "^0.2.7"
     terser "^5.10.0"
 
-html-webpack-plugin@^5.5.0:
+html-webpack-plugin@5.5.1, html-webpack-plugin@^5.5.0:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.5.1.tgz#826838e31b427f5f7f30971f8d8fa2422dfa6763"
   integrity sha512-cTUzZ1+NqjGEKjmVgZKLMdiFg3m9MdRXkZW2OEe69WYVi5ONLMmlnSZdXzGGMOq0C8jGDrL6EWyEDDUioHO/pA==
@@ -12896,7 +12896,7 @@ postcss@8.4.21:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@^8.2.14, postcss@^8.3.5, postcss@^8.3.7, postcss@^8.4.14, postcss@^8.4.16, postcss@^8.4.19, postcss@^8.4.23:
+postcss@8.4.23, postcss@^8.2.14, postcss@^8.3.5, postcss@^8.3.7, postcss@^8.4.14, postcss@^8.4.16, postcss@^8.4.19, postcss@^8.4.23:
   version "8.4.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.23.tgz#df0aee9ac7c5e53e1075c24a3613496f9e6552ab"
   integrity sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==
