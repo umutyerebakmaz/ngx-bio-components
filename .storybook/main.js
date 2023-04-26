@@ -1,6 +1,15 @@
 module.exports = {
     stories: [],
-    addons: ['@storybook/addon-essentials', '@storybook/addon-mdx-gfm'],
+    addons: [
+        '@storybook/addon-essentials',
+        '@storybook/addon-mdx-gfm',
+        {
+            name: "@storybook/addon-styling",
+            options: {
+                postCss: true,
+            },
+        },
+    ],
     // uncomment the property below if you want to apply some webpack config globally
     // webpackFinal: async (config, { configType }) => {
     //   // Make whatever fine-grained changes you need that should apply to all storybook configs

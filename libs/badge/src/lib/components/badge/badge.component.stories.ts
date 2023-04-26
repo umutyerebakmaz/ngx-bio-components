@@ -2,7 +2,7 @@ import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { BioBadgeComponent } from './badge.component';
 
 export default {
-    title: 'BioBadgeComponent',
+    title: 'Badge',
     component: BioBadgeComponent,
     decorators: [
         moduleMetadata({
@@ -12,13 +12,8 @@ export default {
 } as Meta<BioBadgeComponent>;
 
 const Template: Story<BioBadgeComponent> = (args: BioBadgeComponent) => ({
-    template: `
-<bio-badge [size]="size" [shape]="shape" [color]="color" [border]="border">
-  <svg class="h-1.5 w-1.5 fill-gray-400" viewBox="0 0 6 6" aria-hidden="true">
-    <circle cx="3" cy="3" r="3" />
-  </svg>
-Template
-</bio-badge>`,
+    template: `<bio-badge [size]="size" [shape]="shape" [color]="color" [border]="border">Badge</bio-badge>
+`,
     props: {
         ...args
     }
