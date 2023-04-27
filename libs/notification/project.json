@@ -10,7 +10,8 @@
             "executor": "@nrwl/angular:package",
             "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
             "options": {
-                "project": "libs/notification/ng-package.json"
+                "project": "libs/notification/ng-package.json",
+                "tailwindConfig": "libs/notification/tailwind.config.js"
             },
             "configurations": {
                 "production": {

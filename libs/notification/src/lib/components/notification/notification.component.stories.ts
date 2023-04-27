@@ -6,9 +6,14 @@ export default {
     component: BioNotificationComponent,
 } as Meta<BioNotificationComponent>;
 
-export const Primary = {
+export const simple = {
     render: (args: BioNotificationComponent) => ({
+        template: `<bio-notification [config]="config"></bio-notification>`,
         props: args,
     }),
-    args: {},
+    args: {
+        config: {
+            politeness: 'assertive'
+        }
+    },
 };
