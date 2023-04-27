@@ -6,7 +6,8 @@ export default {
     component: BioButtonComponent
 } as Meta<BioButtonComponent>;
 
-export const primary = {
+// medum
+export const primaryMedium = {
     render: (args: BioButtonComponent) => ({
         template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
         props: args,
@@ -19,7 +20,7 @@ export const primary = {
     },
 };
 
-export const secondary = {
+export const secondaryMedium = {
     render: (args: BioButtonComponent) => ({
         template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
         props: args,
@@ -32,7 +33,7 @@ export const secondary = {
     },
 };
 
-export const white = {
+export const whiteMedium = {
     render: (args: BioButtonComponent) => ({
         template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
         props: args,
@@ -43,3 +44,45 @@ export const white = {
         type: 'reset'
     },
 };
+
+// small
+export const primarySmall = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'primary',
+        size: "sm",
+        type: 'button',
+        disabled: false,
+    },
+};
+
+export const secondarySmall = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'secondary',
+        size: 'sm',
+        type: 'submit',
+        disabled: false,
+    },
+};
+
+export const whiteSmall = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'white',
+        size: 'sm',
+        type: 'reset'
+    },
+};
+
+
+
