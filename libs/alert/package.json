@@ -20,10 +20,10 @@
     },
     "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/alert/README.md",
     "peerDependencies": {
-        "@angular/common": "15.2.8",
-        "@angular/core": "15.2.8"
+        "@angular/common": "^15.2.8",
+        "@angular/core": "^15.2.8"
     },
     "dependencies": {
-        "tslib": "2.5.0"
+        "tslib": "^2.5.3"
     }
 }
