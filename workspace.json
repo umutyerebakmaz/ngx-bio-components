@@ -5,6 +5,8 @@
         "avatar": "libs/avatar",
         "badge": "libs/badge",
         "button": "libs/button",
-        "text-input": "libs/text-input"
+        "text-input": "libs/text-input",
+        "tooltip": "libs/tooltip",
+        "notification": "libs/notification"
     }
 }

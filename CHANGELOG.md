@@ -1,13 +1,11 @@
 # ngx-bio-components
 
-## 0.1.0
-
-### Minor Changes
-
--   d25c31e: button hover outline efect fixed
+## 0.0.1
 
 ### Patch Changes
 
--   f58f67b: add changeset setup
--   03462a7: changeset test
--   268f5e5: @ngx-bio-components foo test
+-   add missing react and react-dom dependencies
+-   add new alert.component.stories.ts
+-   add notification library structure
+-   add story migration
+-   add other old file migrations
