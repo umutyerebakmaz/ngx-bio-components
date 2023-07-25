@@ -1,70 +1,79 @@
 {
-    "name": "button",
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "projectType": "library",
-    "sourceRoot": "libs/button/src",
-    "prefix": "bio",
-    "targets": {
-        "build": {
-            "executor": "@nrwl/angular:package",
-            "outputs": ["dist/libs/button"],
-            "options": {
-                "project": "libs/button/ng-package.json",
-                "tailwindConfig": "libs/button/tailwind.config.js"
-            },
-            "configurations": {
-                "production": {
-                    "tsConfig": "libs/button/tsconfig.lib.prod.json"
-                },
-                "development": {
-                    "tsConfig": "libs/button/tsconfig.lib.json"
-                }
-            },
-            "defaultConfiguration": "production"
+  "name": "button",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/button/src",
+  "prefix": "bio",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": [
+        "{workspaceRoot}/dist/libs/button"
+      ],
+      "options": {
+        "project": "libs/button/ng-package.json",
+        "tailwindConfig": "libs/button/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/button/tsconfig.lib.prod.json"
         },
-        "test": {
-            "executor": "@nrwl/jest:jest",
-            "outputs": ["coverage/libs/button"],
-            "options": {
-                "jestConfig": "libs/button/jest.config.js",
-                "passWithNoTests": true
-            }
-        },
-        "lint": {
-            "executor": "@nrwl/linter:eslint",
-            "options": {
-                "lintFilePatterns": ["libs/button/src/**/*.ts", "libs/button/src/**/*.html"]
-            }
-        },
-        "storybook": {
-            "executor": "@storybook/angular:start-storybook",
-            "options": {
-                "port": 4400,
-                "configDir": "libs/button/.storybook",
-                "browserTarget": "button:build-storybook",
-                "compodoc": false
-            },
-            "configurations": {
-                "ci": {
-                    "quiet": true
-                }
-            }
-        },
-        "build-storybook": {
-            "executor": "@storybook/angular:build-storybook",
-            "outputs": ["{options.outputPath}"],
-            "options": {
-                "outputDir": "dist/storybook/button",
-                "configDir": "libs/button/.storybook",
-                "browserTarget": "button:build-storybook",
-                "compodoc": false
-            },
-            "configurations": {
-                "ci": {
-                    "quiet": true
-                }
-            }
+        "development": {
+          "tsConfig": "libs/button/tsconfig.lib.json"
         }
+      },
+      "defaultConfiguration": "production"
     },
-    "tags": []
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/libs/button"
+      ],
+      "options": {
+        "jestConfig": "libs/button/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/button/src/**/*.ts",
+          "libs/button/src/**/*.html"
+        ]
+      }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/button/.storybook",
+        "browserTarget": "button:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputDir": "dist/storybook/button",
+        "configDir": "libs/button/.storybook",
+        "browserTarget": "button:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
 }

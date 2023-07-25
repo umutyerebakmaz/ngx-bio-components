@@ -7,7 +7,9 @@
     "targets": {
         "build": {
             "executor": "@nrwl/angular:package",
-            "outputs": ["dist/libs/alert"],
+            "outputs": [
+                "{workspaceRoot}/dist/libs/alert"
+            ],
             "options": {
                 "project": "libs/alert/ng-package.json",
                 "tailwindConfig": "libs/alert/tailwind.config.js"
@@ -24,7 +26,9 @@
         },
         "test": {
             "executor": "@nrwl/jest:jest",
-            "outputs": ["coverage/libs/alert"],
+            "outputs": [
+                "{workspaceRoot}/coverage/libs/alert"
+            ],
             "options": {
                 "jestConfig": "libs/alert/jest.config.ts",
                 "passWithNoTests": true
@@ -33,7 +37,10 @@
         "lint": {
             "executor": "@nrwl/linter:eslint",
             "options": {
-                "lintFilePatterns": ["libs/alert/**/*.ts", "libs/alert/**/*.html"]
+                "lintFilePatterns": [
+                    "libs/alert/**/*.ts",
+                    "libs/alert/**/*.html"
+                ]
             }
         },
         "storybook": {
@@ -52,7 +59,9 @@
         },
         "build-storybook": {
             "executor": "@storybook/angular:build-storybook",
-            "outputs": ["{options.outputDir}"],
+            "outputs": [
+                "{options.outputDir}"
+            ],
             "options": {
                 "outputDir": "dist/storybook/alert",
                 "configDir": "libs/alert/.storybook",

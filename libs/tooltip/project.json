@@ -1,77 +1,88 @@
 {
-    "name": "tooltip",
-    "$schema": "../node_modules/nx/schemas/project-schema.json",
-    "projectType": "library",
-    "sourceRoot": "libs/tooltip/src",
-    "prefix": "bio",
-    "targets": {
-        "build": {
-            "executor": "@nrwl/angular:package",
-            "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
-            "options": {
-                "project": "libs/tooltip/ng-package.json",
-                "tailwindConfig": "libs/tooltip/tailwind.config.js"
-            },
-            "configurations": {
-                "production": {
-                    "tsConfig": "libs/tooltip/tsconfig.lib.prod.json"
-                },
-                "development": {
-                    "tsConfig": "libs/tooltip/tsconfig.lib.json"
-                }
-            },
-            "defaultConfiguration": "production"
+  "name": "tooltip",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/tooltip/src",
+  "prefix": "bio",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
+      "options": {
+        "project": "libs/tooltip/ng-package.json",
+        "tailwindConfig": "libs/tooltip/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/tooltip/tsconfig.lib.prod.json"
         },
-        "test": {
-            "executor": "@nrwl/jest:jest",
-            "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
-            "options": {
-                "jestConfig": "libs/tooltip/jest.config.ts",
-                "passWithNoTests": true
-            },
-            "configurations": {
-                "ci": {
-                    "ci": true,
-                    "codeCoverage": true
-                }
-            }
-        },
-        "lint": {
-            "executor": "@nrwl/linter:eslint",
-            "outputs": ["{options.outputFile}"],
-            "options": {
-                "lintFilePatterns": ["libs/tooltip/**/*.ts", "libs/tooltip/**/*.html"]
-            }
-        },
-        "storybook": {
-            "executor": "@storybook/angular:start-storybook",
-            "options": {
-                "port": 4400,
-                "configDir": "libs/tooltip/.storybook",
-                "browserTarget": "tooltip:build-storybook",
-                "compodoc": false
-            },
-            "configurations": {
-                "ci": {
-                    "quiet": true
-                }
-            }
-        },
-        "build-storybook": {
-            "executor": "@storybook/angular:build-storybook",
-            "outputs": ["{options.outputDir}"],
-            "options": {
-                "outputDir": "dist/storybook/tooltip",
-                "configDir": "libs/tooltip/.storybook",
-                "browserTarget": "tooltip:build-storybook",
-                "compodoc": false
-            },
-            "configurations": {
-                "ci": {
-                    "quiet": true
-                }
-            }
+        "development": {
+          "tsConfig": "libs/tooltip/tsconfig.lib.json"
         }
+      },
+      "defaultConfiguration": "production"
     },
-    "tags": []
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "libs/tooltip/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/tooltip/**/*.ts",
+          "libs/tooltip/**/*.html"
+        ]
+      }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/tooltip/.storybook",
+        "browserTarget": "tooltip:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": [
+        "{options.outputDir}"
+      ],
+      "options": {
+        "outputDir": "dist/storybook/tooltip",
+        "configDir": "libs/tooltip/.storybook",
+        "browserTarget": "tooltip:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
 }
