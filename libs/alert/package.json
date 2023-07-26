@@ -1,6 +1,6 @@
 {
     "name": "@ngx-bio-components/alert",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "repository": {
         "type": "git",
         "url": "https://github.com/umutyerebakmaz/ngx-bio-components"
@@ -20,10 +20,10 @@
     },
     "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/alert/README.md",
     "peerDependencies": {
-        "@angular/common": "^15.2.8 || ^16.0.0",
-        "@angular/core": "^15.2.8 || ^16.0.0"
+        "@angular/common": "^15.0.0 || ^16.0.0",
+        "@angular/core": "^15.0.0 || ^16.0.0"
     },
     "dependencies": {
-        "tslib": "^2.5.3"
+        "tslib": "^2.5.3 || ^2.6.0"
     }
 }
