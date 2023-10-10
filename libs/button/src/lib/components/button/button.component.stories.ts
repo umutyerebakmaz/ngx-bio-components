@@ -45,6 +45,18 @@ export const whiteMedium = {
     },
 };
 
+export const redMedium = {
+    render: (args: BioButtonComponent) => ({
+        template: `<button bio-button [color]="color" [size]="size" [disabled]="disabled">Button</button>`,
+        props: args,
+    }),
+    args: {
+        color: 'red',
+        size: 'md',
+        type: 'reset'
+    },
+};
+
 // small
 export const primarySmall = {
     render: (args: BioButtonComponent) => ({

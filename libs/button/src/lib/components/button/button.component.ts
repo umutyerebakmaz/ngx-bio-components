@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input, ElementRef, OnInit, AfterViewInit, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
 import { FocusMonitor } from '@angular/cdk/a11y';
 
-export type ButtonColor = 'primary' | 'secondary' | 'white';
+export type ButtonColor = 'primary' | 'secondary' | 'white' | 'red';
 export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type ButtonType = 'button' | 'reset' | 'submit';
 
