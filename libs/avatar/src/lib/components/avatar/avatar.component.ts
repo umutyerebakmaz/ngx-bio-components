@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnInit, SimpleChanges } from '@angular/core';
 
 export type Avatar = {
     shape?: 'circular' | 'rounded';
@@ -20,24 +20,15 @@ export type Avatar = {
 export class BioAvatarComponent implements OnInit {
 
     @Input() avatar!: Avatar;
+    src!: string;
 
     ngOnInit(): void {
+        this.handler();
 
-        if (this.avatar.path && this.avatar.img) {
-            this.avatar.img = this.avatar.path + this.avatar.img;
-        }
+    }
 
-        if (!this.avatar.shape || this.avatar.shape === null) {
-            this.avatar.shape = 'circular';
-        }
-
-        if (!this.avatar.size || this.avatar.size === null) {
-            this.avatar.size = 'md'
-        }
-
-        if (this.avatar.placeholder) {
-            delete this.avatar.img;
-        }
+    ngOnChanges(changes: SimpleChanges): void {
+        this.handler();
     }
 
     get addPlaceHolderContainerClass() {
@@ -90,4 +81,23 @@ export class BioAvatarComponent implements OnInit {
             'xl': this.avatar.size === 'xl'
         }
     }
+
+    handler() {
+        if (this.avatar.path && this.avatar.img) {
+            this.src = this.avatar.path + this.avatar.img;
+        }
+
+        if (!this.avatar.shape || this.avatar.shape === null) {
+            this.avatar.shape = 'circular';
+        }
+
+        if (!this.avatar.size || this.avatar.size === null) {
+            this.avatar.size = 'md'
+        }
+
+        if (this.avatar.placeholder) {
+            delete this.avatar.img;
+        }
+    }
+
 }

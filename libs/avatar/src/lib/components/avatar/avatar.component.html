@@ -1,11 +1,16 @@
 <div class="bio-avatar">
-
     <div *ngIf="avatar.placeholder; else image" class="placeholder-container" [ngClass]="addPlaceHolderContainerClass">
         <span class="placeholder-text" [ngClass]="addPlaceHolderTextClass">{{ avatar.placeholder }}</span>
     </div>
 
     <ng-template #image>
-        <img *ngIf="avatar.img; else icon" class="avatar-image" [ngClass]="addImageAndIconClass" [src]="avatar.img" [alt]="avatar.alt"/>
+        <img
+            *ngIf="avatar.img; else icon"
+            class="avatar-image"
+            [ngClass]="addImageAndIconClass"
+            [src]="src"
+            [alt]="avatar.alt"
+        />
     </ng-template>
 
     <ng-template #icon>

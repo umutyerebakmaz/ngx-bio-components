@@ -17,8 +17,7 @@ export const primary = {
             badgeColor: 'green',
             badgePosition: 'topRight',
             path: 'http://localhost:4000/images/users/',
-            img: '28b4bf01-a067-46cb-9244-c55809608727.jpg',
-            placeholder: 'IO',
+            img: 'ecefa734-6a02-47dc-ae56-67102a8627ca.jpg',
         }
     }
 }
