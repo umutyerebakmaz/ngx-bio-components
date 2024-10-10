@@ -18,8 +18,8 @@
     },
     "homepage": "https://github.com/umutyerebakmaz/ngx-bio-components/blob/main/libs/badge/README.md",
     "peerDependencies": {
-        "@angular/common": "^15.0.0 || ^16.0.0",
-        "@angular/core": "^15.0.0 || ^16.0.0"
+        "@angular/common": "^15.0.0 || ^16.0.0 || ^18.0.0",
+        "@angular/core": "^15.0.0 || ^16.0.0 || ^18.0.0"
     },
     "dependencies": {
         "tslib": "^2.5.3 || ^2.6.0"
