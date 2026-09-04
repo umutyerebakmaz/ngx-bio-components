@@ -2,7 +2,7 @@
     "name": "@ngx-bio-components/notification",
     "version": "0.0.1",
     "peerDependencies": {
-        "@angular/common": "^15.2.0 || ^16.0.0",
+        "@angular/common": "^19.2.16 ^19.2.16",
         "@angular/core": "^15.2.0 || ^16.0.0"
     },
     "dependencies": {
