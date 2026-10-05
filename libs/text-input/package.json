@@ -2,7 +2,7 @@
     "name": "@ngx-bio-components/text-input",
     "version": "0.0.1",
     "peerDependencies": {
-        "@angular/common": "16.1.6",
+        "@angular/common": "19.2.16",
         "@angular/core": "16.1.6"
     },
     "dependencies": {
